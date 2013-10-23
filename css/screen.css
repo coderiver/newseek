@@ -1,0 +1,260 @@
+* { margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body { font-family: "Open Sans", Arial, Tahoma, sans-serif; font-weight: normal; font-size: 13px; line-height: 1.4; }
+
+a img, fieldset { border: none; }
+
+a { color: #336ebe; text-decoration: none; }
+
+li { list-style: none; }
+
+textarea, button, select, input { border: none; outline: none; font-family: "Open Sans", Arial, Tahoma, sans-serif; }
+
+button { line-height: 1; cursor: pointer; }
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+
+.wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -60px; }
+
+.wrap__in, .footer__in { position: relative; width: 1150px; margin: 0 auto; }
+
+.push { height: 60px; clear: both; }
+
+.title-wrap { margin-bottom: 30px; border-bottom: 3px solid gainsboro; }
+.title-wrap .checkbox, .title-wrap .link { float: right; }
+.title-wrap .link { margin-top: 3px; }
+
+.title { padding-bottom: 15px; text-transform: uppercase; color: #e31c22; font-size: 16px; font-weight: bold; }
+
+.title_sm { font-size: 14px; }
+
+.title_dark { color: #363636; }
+
+.sidebar { float: left; width: 180px; padding-right: 10px; }
+
+.logo { display: block; padding: 25px 0; border-bottom: 2px solid gainsboro; text-align: center; font-family: "PT Serif", Arial, Tahoma, serif; font-size: 14px; line-height: 1; color: #363636; }
+.logo strong { display: block; font-size: 39px; }
+.logo span { font-weight: bold; }
+
+.my { padding: 13px 10px; border-bottom: 1px solid gainsboro; }
+.my a { font-size: 15px; color: #363636; }
+
+.nav { padding: 13px 10px 15px; border-bottom: 1px solid gainsboro; }
+.nav li { margin-top: 7px; }
+.nav li.is-active a { color: #e31c22; }
+.nav li:first-child { margin: 0; }
+.nav a { font-size: 15px; color: #363636; font-weight: 600; }
+
+.nav_mod li { margin-top: 10px; }
+.nav_mod a { font-size: 13px; font-weight: normal; color: #464646; }
+
+.subscribe, .login { padding: 14px 10px; }
+.subscribe a, .login a { color: #363636; }
+
+.subscribe { border-bottom: 1px solid gainsboro; }
+
+.container { float: left; width: 930px; padding-left: 28px; border-left: 2px solid gainsboro; }
+
+.top { position: relative; height: 48px; margin-bottom: 35px; border-bottom: 2px solid gainsboro; }
+
+.region { float: left; height: 48px; line-height: 48px; }
+
+.region__title { float: left; margin-right: 15px; color: #898989; }
+
+.region__list { float: left; }
+.region__list > li { float: left; }
+.region__list > li.is-drop > a { position: relative; padding: 0 13px 0 15px; }
+.region__list > li.is-drop > a .arr { margin: 0 0 2px 5px; }
+.region__list > li.is-drop:hover > a:after, .region__list > li.is-drop:hover > a:before { content: ""; position: absolute; left: 50%; width: 0px; height: 0px; margin-left: -7px; border-style: solid; border-width: 0 7px 7px 7px; z-index: 1005; }
+.region__list > li.is-drop:hover > a:before { bottom: 0px; border-color: transparent transparent gainsboro transparent; }
+.region__list > li.is-drop:hover > a:after { bottom: -1px; border-color: transparent transparent white transparent; }
+.region__list > li.is-drop:hover .arr { border-width: 0 4px 4px 4px; border-color: transparent transparent black transparent; }
+.region__list > li.is-drop:hover .region__drop { display: block; }
+.region__list > li.is-active:hover { background: none; }
+.region__list > li.is-active > a { box-shadow: 0 2px 0 0 black, 0 -1px 0 0 black inset; color: black; cursor: default; }
+.region__list > li.is-active .arr { border-color: black transparent transparent transparent; }
+.region__list > li:hover { background: whitesmoke; }
+.region__list > li:hover > a { color: black; }
+.region__list > li > a { display: block; padding: 0 15px; }
+
+.region__drop { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 24px 30px; background: white; border: 1px solid gainsboro; line-height: 1.4; z-index: 1000; }
+.region__drop ul { float: left; width: 20%; margin-right: 5%; }
+.region__drop li { margin-top: 15px; }
+.region__drop li:first-child { margin: 0; }
+.region__drop li.is-active a { color: #363636; }
+
+.arr { display: inline-block; width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #336ebe transparent transparent transparent; vertical-align: middle; }
+
+.search { float: right; height: 28px; margin: 9px 0 0 22px; border: 1px solid gainsboro; }
+
+.search__btn { float: left; width: 28px; height: 28px; background: none; font-size: 0; }
+.search__btn i { display: inline-block; background: url('../img/icons-sce66b42652.png') 0 -226px no-repeat; width: 15px; height: 15px; }
+
+.search__field { float: left; width: 132px; height: 28px; padding-right: 7px; }
+
+.lang { position: relative; float: right; }
+.lang:hover .lang__current { background: whitesmoke; color: #363636; }
+.lang:hover .lang__current .border { display: none; }
+.lang:hover .lang__current .arr { border-width: 0 4px 4px 4px; border-color: transparent transparent black transparent; }
+.lang:hover .lang__current:after, .lang:hover .lang__current:before { content: ""; position: absolute; left: 50%; width: 0px; height: 0px; margin-left: -7px; border-style: solid; border-width: 0 7px 7px 7px; z-index: 1005; }
+.lang:hover .lang__current:before { bottom: 0px; border-color: transparent transparent gainsboro transparent; }
+.lang:hover .lang__current:after { bottom: -1px; border-color: transparent transparent white transparent; }
+.lang:hover .lang__drop { display: block; }
+
+.lang__current { position: relative; height: 48px; padding: 0 18px; line-height: 48px; font-size: 0; cursor: pointer; color: #336ebe; }
+.lang__current > span { display: inline-block; vertical-align: middle; font-size: 13px; }
+.lang__current .border { content: ""; position: absolute; top: 13px; right: 0; height: 22px; border-left: 1px dashed gainsboro; }
+.lang__current .arr { margin: 2px 0 0 5px; }
+
+.lang__ru, .lang__ua, .lang__eu { display: inline-block; margin-right: 7px; vertical-align: middle; }
+
+.lang__ru { background: url('../img/icons-sce66b42652.png') 0 -22px no-repeat; width: 16px; height: 12px; }
+
+.lang__ua { background: url('../img/icons-sce66b42652.png') 0 -44px no-repeat; width: 16px; height: 12px; }
+
+.lang__eu { background: url('../img/icons-sce66b42652.png') 0 0 no-repeat; width: 16px; height: 12px; }
+
+.lang__drop { display: none; position: absolute; top: 100%; left: -30px; padding: 14px 15px 14px 20px; background: white; border: 1px solid gainsboro; font-size: 0; z-index: 1000; }
+.lang__drop li { height: 20px; margin-bottom: 2px; line-height: 20px; white-space: nowrap; }
+.lang__drop li span, .lang__drop li strong { display: inline-block; vertical-align: middle; font-size: 12px; }
+.lang__drop li span { color: #363636; }
+.lang__drop li strong { margin-left: 7px; font-weight: normal; }
+.lang__drop li.is-active span, .lang__drop li.is-active strong { color: #e31c22; }
+
+.footer { background: #ebebeb; }
+
+.footer__in { height: 60px; }
+
+.copyright { float: left; width: 222px; line-height: 60px; color: #898989; }
+
+.mail { float: left; line-height: 60px; }
+
+.social { float: right; margin-top: 10px; }
+.social li { float: left; margin-left: 6px; }
+.social li:first-child { margin: 0; }
+.social li a { display: block; width: 37px; height: 40px; background: white; text-align: center; line-height: 40px; font-size: 0; }
+.social li i { display: inline-block; vertical-align: middle; }
+
+.social__vk i { background: url('../img/icons-sce66b42652.png') 0 -166px no-repeat; width: 16px; height: 20px; }
+
+.social__gp i { background: url('../img/icons-sce66b42652.png') 0 -136px no-repeat; width: 20px; height: 20px; }
+
+.social__fb i { background: url('../img/icons-sce66b42652.png') 0 -251px no-repeat; width: 10px; height: 20px; }
+
+.social__tw i { background: url('../img/icons-sce66b42652.png') 0 -196px no-repeat; width: 15px; height: 20px; }
+
+.checkbox { display: block; position: relative; padding-left: 28px; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+.checkbox input, .checkbox i { position: absolute; left: 0; }
+.checkbox input { top: 2px; opacity: 0; z-index: 5; }
+.checkbox input:checked + i:after { content: ""; position: absolute; top: 3px; left: 2px; background: url('../img/icons-sce66b42652.png') 0 -281px no-repeat; width: 10px; height: 9px; }
+.checkbox i { top: 0; left: 0; width: 14px; height: 14px; border: 2px solid #707070; }
+
+.news { padding-bottom: 30px; margin-bottom: 25px; border-bottom: 1px solid gainsboro; }
+
+.news_grid { padding-bottom: 20px; }
+.news_grid:before, .news_grid:after { content: ""; display: table; }
+.news_grid:after { clear: both; }
+.news_grid > .news__item { display: table; padding: 0; margin: 0 0 25px 0; border: none; }
+.news_grid > .news__item .news__title a { font-size: 22px; }
+.news_grid > .news__item .news__title span { font-size: 11px; }
+.news_grid > .news__item .news__text { font-size: 13px; }
+
+.news_no-border { border: none; }
+
+.news_all { border: none; }
+.news_all .news__title a { font-size: 22px; }
+
+.news_bg { padding: 0; border: none; }
+.news_bg .news__item { padding: 20px; margin: 0; background: whitesmoke; }
+.news_bg .news__item:first-child { padding: 20px; }
+
+.news__item { padding-top: 20px; margin-top: 20px; border-top: 1px dashed gainsboro; }
+.news__item:before, .news__item:after { content: ""; display: table; }
+.news__item:after { clear: both; }
+.news__item:first-child { padding: 0; margin: 0; border: none; }
+
+.news__pic { float: left; margin-right: 15px; }
+.news__pic img { display: block; }
+
+.news__in { display: table; }
+
+.news__title { margin-bottom: 5px; }
+.news__title a { font-family: "PT Serif", Arial, Tahoma, serif; font-weight: bold; font-size: 26px; color: #252525; line-height: 1.2; }
+.news__title span { margin-left: 5px; font-family: "Open Sans", Arial, Tahoma, sans-serif; font-size: 13px; font-weight: 600; color: #898989; }
+
+.news__text { margin-bottom: 15px; font-size: 14px; }
+.news__text p { margin-top: 15px; }
+.news__text p:first-child { margin: 0; }
+
+.news__list { float: right; width: 325px; margin-left: 20px; }
+.news__list .news__item { padding-top: 10px; margin-top: 10px; }
+.news__list .news__item:first-child { padding: 0; margin: 0; }
+.news__list .news__title { margin: 0; }
+.news__list .news__title a { font-family: "Open Sans", Arial, Tahoma, sans-serif; font-size: 13px; font-weight: 600; }
+.news__list .news__title span { font-size: 11px; }
+
+.news__btn-load { width: 100%; height: 70px; margin-top: 35px; background: whitesmoke; color: #336ebe; }
+
+.latest { position: fixed; bottom: 70px; right: 10px; width: 360px; }
+
+.latest__item { padding: 15px; margin-top: 10px; background: white; box-shadow: 0 0 0 2px rgba(54, 54, 54, 0.25); background: white; }
+
+.latest__head { position: relative; padding: 0 25px 10px 0; margin-bottom: 17px; border-bottom: 1px dashed #cccccc; }
+.latest__head span { color: #898989; }
+
+.latest__close { position: absolute; top: 5px; right: 0; background: url('../img/icons-sce66b42652.png') 0 -300px no-repeat; width: 9px; height: 9px; }
+
+.latest__in:before, .latest__in:after { content: ""; display: table; }
+.latest__in:after { clear: both; }
+
+.latest__pic { float: left; margin-right: 10px; }
+
+.latest__title a { color: #363636; }
+.latest__title span { margin-left: 3px; font-size: 11px; color: #898989; }
+
+.weather { margin-bottom: 25px; }
+
+.text { padding: 20px; margin-bottom: 25px; background: whitesmoke; }
+.text p { margin-top: 20px; }
+.text p:first-child { margin: 0; }
+
+.select { color: #336ebe; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+.select .arr { margin-left: 4px; }
+
+.sort { float: right; margin-top: 3px; }
+.sort li { float: left; }
+.sort li.is-active a { color: black; border-bottom: 3px solid; cursor: default; }
+.sort a { position: relative; display: block; padding: 0 10px 16px; }
+
+.user { padding-top: 25px; }
+
+.user__head { padding-bottom: 25px; margin-bottom: 20px; border-bottom: 1px solid gainsboro; }
+.user__head:before, .user__head:after { content: ""; display: table; }
+.user__head:after { clear: both; }
+
+.user__pic { float: left; position: relative; margin-right: 15px; }
+.user__pic img { display: block; }
+.user__pic button { position: absolute; bottom: 10px; left: 10px; right: 10px; height: 26px; background: black; background: rgba(0, 0, 0, 0.75); font-size: 12px; font-weight: 600; color: white; }
+
+.user__detail { float: left; }
+
+.user__name { font-size: 21px; font-weight: 600; }
+
+.user__mail { font-style: italic; color: #898989; }
+
+.user__out { float: right; padding: 20px 30px; border-left: 1px dashed gainsboro; font-size: 0; }
+.user__out button { background: url('../img/icons-sce66b42652.png') 0 -66px no-repeat; width: 60px; height: 60px; }
+
+.user__subscribe { float: right; height: 100px; padding: 0 30px; border-left: 1px dashed gainsboro; }
+
+.mailing__title { font-size: 15px; }
+
+.mailing__status { margin-bottom: 20px; font-style: italic; color: #39b54a; }
+
+.tabs__nav { margin-bottom: 30px; font-size: 0; }
+.tabs__nav button { height: 50px; padding: 0 20px; margin-right: 20px; background: whitesmoke; color: #336ebe; font-size: 18px; }
+.tabs__nav button.is-active { position: relative; background: #e31c22; color: white; }
+.tabs__nav button.is-active:after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -8px; width: 0px; height: 0px; border-style: solid; border-width: 8px 8px 0 8px; border-color: #e31c22 transparent transparent transparent; }

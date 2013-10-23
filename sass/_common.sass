@@ -1,0 +1,393 @@
+@import "base"
+* 
+	margin: 0
+	padding: 0 
+	//-webkit-text-size-adjust: none
+html, body 
+	height: 100%
+body
+	font-family: 'Open Sans', Arial, Tahoma, sans-serif
+	font-weight: normal 
+	font-size: 13px
+	line-height: 1.4
+	//-webkit-transform: translate3d(0,0,0);
+	//-weblit-backface-visibility: hidden;
+// resets
+a img, fieldset 
+	border: none
+a
+	color: $blue 
+	text-decoration: none
+	&:hover
+li 
+	list-style: none
+textarea, button, select, input
+	border: 0
+	outline: none
+	font-family: 'Open Sans', Arial, Tahoma, sans-serif
+button 
+	line-height: 1
+	cursor: pointer
+	&::-moz-focus-inner
+		padding: 0
+		border: 0
+table 
+	border-spacing: 0
+	border-collapse: collapse
+// common styles
+.wrap
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -60px
+.wrap__in, .footer__in
+	position: relative
+	width: 1150px
+	margin: 0 auto
+.push
+	height: 60px
+	clear: both
+.title-wrap
+	margin-bottom: 30px
+	border-bottom: 3px solid $bc 
+	.checkbox, .link
+		float: right
+	.link
+		margin-top: 3px
+.title
+	padding-bottom: 15px
+	text-transform: uppercase
+	color: $red
+	font-size: 16px
+	font-weight: bold
+.title_sm
+	font-size: 14px 
+.title_dark
+	color: #363636 
+//
+.sidebar
+	float: left
+	width: 180px	 
+	padding-right: 10px
+.logo
+	display: block
+	padding: 25px 0
+	border-bottom: 2px solid $bc 
+	text-align: center
+	+f
+	font-size: 14px
+	line-height: 1
+	color: #363636 
+	strong
+		display: block
+		font-size: 39px
+	span
+		font-weight: bold
+.my
+	padding: 13px 10px
+	border-bottom: 1px solid $bc
+	a
+		font-size: 15px
+		color: #363636 
+.nav
+	padding: 13px 10px 15px
+	border-bottom: 1px solid $bc 
+	li
+		margin-top: 7px
+		&.is-active
+			a
+				color: $red
+		&:first-child
+			margin: 0
+	a
+		font-size: 15px
+		color: #363636 
+		font-weight: 600 
+.nav_mod
+	li
+		margin-top: 10px
+	a
+		font-size: 13px
+		font-weight: normal
+		color: #464646
+.subscribe, .login
+	padding: 14px 10px
+	a
+		color: #363636 
+.subscribe
+	border-bottom: 1px solid $bc 
+//container
+.container
+	float: left
+	width: 930px
+	padding-left: 28px
+	border-left: 2px solid $bc
+.top
+	position: relative
+	height: 48px
+	margin-bottom: 35px
+	border-bottom: 2px solid $bc 
+.region
+	float: left
+	height: 48px
+	line-height: 48px
+.region__title
+	float: left
+	margin-right: 15px
+	color: #898989 
+.region__list
+	float: left
+	& > li
+		float: left
+		&.is-drop
+			& > a
+				position: relative
+				padding: 0 13px 0 15px
+				.arr
+					margin: 0 0 2px 5px				
+			&:hover
+				& > a
+					&:after, &:before
+						content: ""
+						position: absolute
+						left: 50%
+						width: 0px
+						height: 0px
+						margin-left: -7px
+						border-style: solid
+						border-width: 0 7px 7px 7px	
+						z-index: 1005
+					&:before		
+						bottom: 0px
+						border-color: transparent transparent $bc transparent		
+					&:after
+						bottom: -1px
+						border-color: transparent transparent #fff transparent
+				.arr
+					border-width: 0 4px 4px 4px
+					border-color: transparent transparent #000 transparent
+				.region__drop
+					display: block				
+		&.is-active
+			&:hover
+				background: none
+			& > a
+				box-shadow: 0 2px 0 0 #000, 0 -1px 0 0 #000 inset			
+				color: #000 
+				cursor: default	
+			.arr
+				border-color: #000 transparent transparent transparent		 
+		&:hover
+			background: #f5f5f5
+			& > a
+				color: #000
+		& > a
+			display: block
+			padding: 0 15px					  
+.region__drop
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	padding: 24px 30px
+	background: #FFF
+	border: 1px solid $bc 
+	line-height: 1.4
+	z-index: 1000 
+	ul
+		float: left
+		width: 20%
+		margin-right: 5%
+	li
+		margin-top: 15px
+		&:first-child
+			margin: 0
+		&.is-active
+			a
+				color: #363636 
+.arr
+	display: inline-block
+	width: 0px
+	height: 0px
+	border-style: solid
+	border-width: 4px 4px 0 4px
+	border-color: $blue transparent transparent transparent
+	vertical-align: middle
+.search
+	float: right
+	height: 28px
+	margin: 9px 0 0 22px
+	border: 1px solid $bc
+.search__btn
+	float: left
+	width: 28px
+	height: 28px
+	background: none
+	font-size: 0
+	i
+		display: inline-block
+		+s(search)
+.search__field 	
+	float: left
+	width: 132px
+	height: 28px
+	padding-right: 7px
+.lang
+	position: relative
+	float: right
+	&:hover
+		.lang__current
+			background: #f5f5f5
+			color: #363636 
+			.border
+				display: none
+			.arr
+				border-width: 0 4px 4px 4px
+				border-color: transparent transparent #000 transparent
+			&:after, &:before
+				content: ""
+				position: absolute
+				left: 50%
+				width: 0px
+				height: 0px
+				margin-left: -7px
+				border-style: solid
+				border-width: 0 7px 7px 7px	
+				z-index: 1005
+			&:before		
+				bottom: 0px
+				border-color: transparent transparent $bc transparent		
+			&:after
+				bottom: -1px
+				border-color: transparent transparent #fff transparent
+		.lang__drop
+			display: block
+.lang__current
+	position: relative
+	height: 48px
+	padding: 0 18px
+	line-height: 48px
+	font-size: 0
+	cursor: pointer
+	color: $blue
+	& > span
+		display: inline-block
+		vertical-align: middle
+		font-size: 13px
+	.border
+		content: ""
+		position: absolute
+		top: 13px
+		right: 0
+		height: 22px
+		border-left: 1px dashed $bc
+	.arr
+		margin: 2px 0 0 5px	
+.lang__ru, .lang__ua, .lang__eu
+	display: inline-block
+	margin-right: 7px
+	vertical-align: middle
+.lang__ru
+	+s(ru)
+.lang__ua
+	+s(ua)
+.lang__eu
+	+s(eu)
+.lang__drop 	
+	display: none
+	position: absolute
+	top: 100%
+	left: -30px
+	padding: 14px 15px 14px 20px
+	background: #FFF
+	border: 1px solid $bc 
+	font-size: 0
+	z-index: 1000
+	li
+		height: 20px
+		margin-bottom: 2px
+		line-height: 20px
+		white-space: nowrap
+		span, strong
+			display: inline-block
+			vertical-align: middle
+			font-size: 12px
+		span
+			color: #363636 
+		strong
+			margin-left: 7px
+			font-weight: normal
+		&.is-active
+			span, strong
+				color: $red 
+//footer
+.footer
+	background: #ebebeb 
+.footer__in
+	height: 60px
+.copyright
+	float: left
+	width: 222px 
+	line-height: 60px
+	color: #898989 
+.mail
+	float: left
+	line-height: 60px
+.social
+	float: right
+	margin-top: 10px
+	li
+		float: left
+		margin-left: 6px
+		&:first-child
+			margin: 0
+		a
+			display: block
+			width: 37px
+			height: 40px
+			background: #FFF 
+			text-align: center
+			line-height: 40px
+			font-size: 0
+		i
+			display: inline-block
+			vertical-align: middle
+.social__vk
+	i
+		+s(vk)
+.social__gp
+	i
+		+s(gp)
+.social__fb
+	i
+		+s(fb) 
+.social__tw
+	i
+		+s(tw)
+//form
+.checkbox
+	display: block
+	position: relative
+	padding-left: 28px 
+	+no-sel
+	input, i
+		position: absolute
+		left: 0
+	input
+		top: 2px
+		opacity: 0
+		z-index: 5 
+		&:checked + i
+			&:after
+				content: ""
+				position: absolute
+				top: 3px
+				left: 2px
+				+s(check)
+	i
+		top: 0
+		left: 0
+		width: 14px
+		height: 14px
+		border: 2px solid #707070
