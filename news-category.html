@@ -26,9 +26,9 @@
 			</div>
 			<nav class="nav">
 				<ul>
-					<li class="is-active"><a href="#">Главные новости</a></li>
+					<li><a href="#">Главные новости</a></li>
 					<li><a href="#">Все новости</a></li>
-					<li><a href="#">Популярное</a></li>
+					<li class="is-active"><a href="#">Популярное</a></li>
 					<li><a href="#">Обсуждаемое</a></li>
 					<li><a href="#">Читать позже</a></li>
 					<li><a href="#">Радио</a></li>
@@ -65,8 +65,8 @@
 					<div class="region__title">Регион новостей:</div>
 					<ul class="region__list">
 						<li><a href="#">Мир</a></li>
-						<li><a href="#">Украина</a></li>
-						<li class="is-active is-drop">
+						<li class="is-active"><a href="#">Украина</a></li>
+						<li class="is-drop">
 							<a href="#"><span>Киев</span><i class="arr"></i></a>
 							<div class="region__drop">
 								<ul>
@@ -116,72 +116,113 @@
 				</div>
 			</div>
 			<!-- END .top -->
-			<div class="title-wrap">
-				<div class="link"><a href="#">Настроить страницу</a></div>
-				<div class="title title_dark">мой NEWSEEK</div>
+			<div class="title-wrap">				
+				<!-- BEGIN .hide-archive -->
+				<div class="hide-archive">
+					<a href="#">Скрыть архив</a>
+				</div>
+				<!-- END .hide-archive -->
+				<label class="checkbox"><input type="checkbox" checked=""><i></i>Не показывать прочитаные</label>
+				<div class="title">ПОПУЛЯРНЫЕ статьи В УКРАИНЕ</div>
 			</div>			
-			<div class="title title_sm title_dark">467 ЛЮДЕЙ СЕЙЧАС ЧИТАЮТ СТАТЬЮ</div>
+			<!-- BEGIN .sort-date -->
+			<div class="sort-date">				
+				<div class="select select_year js-select">
+					<span>2013</span>
+					<ul>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+					</ul>
+					<input type="hidden">
+				</div>
+				<div class="select select_month js-select">
+					<span>Сентябрь</span>
+					<ul>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+					</ul>
+					<input type="hidden">
+				</div>
+				<div class="select select_day js-select">
+					<span>15</span>
+					<ul>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+						<li>01</li>
+					</ul>
+					<input type="hidden">
+				</div>
+			</div>
+			<!-- END .sort-date -->
 			<!-- BEGIN .news -->
-			<div class="news news_bg">
+			<div class="news news_all">
 				<div class="news__item">
 					<div class="news__pic">
-						<a href="#"><img src="http://placehold.it/260x190"></a>
+						<a href="#"><img src="http://placehold.it/230x170"></a>
 					</div>
 					<div class="news__in">
 						<div class="news__title">
 							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
 						</div>
 						<div class="news__text">
-							<p>Как минимум четыре человека были убиты и не менее 12 ранены утром 16 сентября в результате стрельбы в здании штаба службы обеспечения ВМС США в вашингтонском Адмиралтействе. По неофициальной информации преступников трое, причем один уже убит, а двое заблокированы в одном из помещений.</p>							
-						</div>
-						<div class="news__more">
-							<a href="#">Читать полностью</a>
+							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа.</p>
+							<p>«Мы требуем освободить наших коллег Егора Соболева, Игоря Луценко, Алексея Германа и других ...</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- END .news -->	
-			<div class="title title_sm title_dark">ВЫ ХОТЕЛИ ПРОЧИТАТЬ</div>
-			<!-- BEGIN .news -->
-			<div class="news news_bg">
 				<div class="news__item">
 					<div class="news__pic">
-						<a href="#"><img src="http://placehold.it/260x190"></a>
+						<a href="#"><img src="http://placehold.it/230x170"></a>
 					</div>
 					<div class="news__in">
 						<div class="news__title">
 							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
 						</div>
 						<div class="news__text">
-							<p>Как минимум четыре человека были убиты и не менее 12 ранены утром 16 сентября в результате стрельбы в здании штаба службы обеспечения ВМС США в вашингтонском Адмиралтействе. По неофициальной информации преступников трое, причем один уже убит, а двое заблокированы в одном из помещений.</p>							
-						</div>
-						<div class="news__more">
-							<a href="#">Читать полностью</a>
+							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vero magni ipsum modi ad qui tempora dolorum praesentium reiciendis numquam magnam sequi consequatur consectetur eaque atque aliquid distinctio voluptatem vel!</p>
 						</div>
 					</div>
 				</div>
+				<div class="news__item">
+					<div class="news__pic">
+						<a href="#"><img src="http://placehold.it/230x170"></a>
+					</div>
+					<div class="news__in">
+						<div class="news__title">
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+						</div>
+						<div class="news__text">
+							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vero magni ipsum modi ad qui tempora dolorum praesentium reiciendis numquam magnam sequi consequatur consectetur eaque atque aliquid distinctio voluptatem vel!</p>
+						</div>
+					</div>
+				</div>
+				<div class="news__item">
+					<div class="news__pic">
+						<a href="#"><img src="http://placehold.it/230x170"></a>
+					</div>
+					<div class="news__in">
+						<div class="news__title">
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+						</div>
+						<div class="news__text">
+							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vero magni ipsum modi ad qui tempora dolorum praesentium reiciendis numquam magnam sequi consequatur consectetur eaque atque aliquid distinctio voluptatem vel!</p>
+						</div>
+					</div>
+				</div>
+				<button class="news__btn-load">Показать все новости</button>
 			</div>
-			<!-- END .news -->	
-			<div class="title title_sm title_dark">ПОГОДА: <span class="select-btn">КИЕВ<i class="arr"></i></span></div>	
-			<!-- BEGIN .weather -->
-			<div class="weather">
-				<img src="img/weather.jpg" alt="" style="display: block">
-			</div>
-			<!-- END .weather -->
-			<div class="title title_sm title_dark">ЦИТАТА ДНЯ</div>	
-			<!-- BEGIN .text -->
-			<div class="text">
-				<p>Пытаюсь приобщить мужа к помощи мне по хозяйству, но муж, как обычно, играет в Героев и "меня нет, помолчи, всё потом".</p>
-				<p>Расстроенная, обращаюсь к дочери: Когда будешь выбирать мужа, выбирай такого, который не играет в компьютерные игры!<br>Дочь: Это чтобы компьютер был свободен?<br>:(</p>
-			</div>
-			<!-- END .text -->
-			<div class="title title_sm title_dark">ГОРОСКОП НА СЕГОДНЯ: <span class="select-btn">ДЕВА<i class="arr"></i></span></div>	
-			<!-- BEGIN .text -->
-			<div class="text">
-				<p>Не самый удачный день. Трудно достичь взаимопонимания с окружающими, найти подход к людям, которые могут что-то для вас сделать.<br>Самостоятельная работа не особенно продуктивна, даже решение простейших задач отнимает много времени. Возможны финансовые потери, заключенные сделки и совершенные покупки едва ли будут удачными.</p>
-				<p>Нежелательно заниматься интеллектуальным трудом, решать задачи, требующие творческого подхода. Вы склонны использовать методы, некогда доказавшие свою эффективность, но не принимаете во внимание тот факт, что ситуация-то изменилась. Нежелательно экспериментировать с имиджем: результат едва ли вам понравится.</p>
-			</div>
-			<!-- END .text -->
+			<!-- END .news -->			
 		</div>
 		<!-- END .container -->
 	</div>

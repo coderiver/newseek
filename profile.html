@@ -52,8 +52,9 @@
 			<div class="subscribe">
 				<a href="#">Подпишись на новости</a>
 			</div>
-			<div class="login">
-				<a href="#">Войти</a>
+			<div class="login is-active">
+				<a href="#">Профиль</a>
+				<div class="login__lang"><i class="lang__ru"></i><span>RU</span></div>
 			</div>
 		</div>
 		<!-- END .sidebar -->
@@ -87,17 +88,143 @@
 					</div>
 				</div>
 				<!-- BEGIN .tabs -->
-				<div class="tabs">
+				<div class="tabs js-tabs">
 					<div class="tabs__nav">
 						<button class="is-active" data-tab="tab-item-1">Личные настройки</button>
 						<button data-tab="tab-item-2">Параметры входа</button>
 					</div>
 					<div class="tabs__content">
 						<div id="tab-item-1" class="tabs__item">
-							
+							<div class="title">Мой ньюсик</div>
+							<!-- BEGIN .setting -->
+							<div class="setting">
+								<label class="switch"><input type="checkbox" checked><i></i>Начинать посещение сайта с страницы “Мой ньюсик”</label>
+							</div>
+							<!-- END .setting -->
+							<div class="title">Меню</div>
+							<!-- BEGIN .setting -->
+							<div class="setting">
+								<div class="setting__column">
+									<div class="title-sm">Главное меню</div>
+									<label class="switch"><input type="checkbox" checked><i></i>Главные новости</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Все новости</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Популярное</label>
+									<label class="switch"><input type="checkbox"><i></i>Самое обсуждаемое</label>
+									<label class="switch"><input type="checkbox"><i></i>Читать позже</label>
+									<label class="switch"><input type="checkbox"><i></i>Радио</label>
+								</div>
+								<div class="setting__column">
+									<div class="title-sm">Рубрики</div>
+									<label class="switch"><input type="checkbox" checked><i></i>Политика</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Геопалитика</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Происшествия</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Наука и технологии</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Экономика и бизнес</label>
+									<label class="switch"><input type="checkbox"><i></i>Шоу-бизнес и культура</label>
+									<label class="switch"><input type="checkbox"><i></i>Общество</label>
+									<label class="switch"><input type="checkbox"><i></i>Здоровье</label>
+									<label class="switch"><input type="checkbox"><i></i>Спорт</label>
+									<label class="switch"><input type="checkbox"><i></i>Авто</label>
+									<label class="switch"><input type="checkbox"><i></i>Блоги</label>
+								</div>
+							</div>
+							<!-- END .setting -->
+							<div class="title">Язык</div>
+							<!-- BEGIN .setting -->
+							<div class="setting">
+								<div class="setting__column">
+									<div class="title-sm">Интерфейс</div>
+									<label class="radio"><input type="radio" name="interface" checked><i></i>Русский</label>
+									<label class="radio"><input type="radio" name="interface"><i></i>Українській</label>
+									<label class="radio"><input type="radio" name="interface"><i></i>English</label>
+								</div>
+								<div class="setting__column">
+									<div class="title-sm">Статьи</div>
+									<label class="switch"><input type="checkbox" checked><i></i>Русские</label>
+									<label class="switch"><input type="checkbox" checked><i></i>Українські</label>
+									<label class="switch"><input type="checkbox" checked><i></i>English</label>
+								</div>
+							</div>
+							<!-- END .setting -->
+							<div class="title">Уведомления по запросу</div>
+							<!-- BEGIN .keywords -->
+							<div class="keywords">
+								<div class="keywords__text">Отметьте интересующие ключивые слова, и мы будем сообщать вам <a href="#">специальным уведомлением</a> о новой статье в которой встречаются ваши ключевые слова</div>
+								<div class="title-sm">Ключевые слова:</div>
+								<ul class="keywords__list">									
+									<li><a href="#">Apple</a></li>
+									<li><a href="#">Биржка</a></li>
+									<li><a href="#">Акции</a></li>
+								</ul>
+								<div class="field">
+									<div class="field__input">
+										<input type="text" placeholder="Добавить новое слово">
+									</div>
+								</div>
+							</div>
+							<!-- END .keywords -->
 						</div>
 						<div id="tab-item-2" class="tabs__item">
-							
+							<div class="title-sm">Почта/Логин:</div>
+							<!-- BEGIN .setting -->
+							<div class="setting">								
+								<div class="setting__mail"><span>leonov.art@gmail.coma</span><a href="#">изменить</a></div>
+							</div>
+							<!-- END .setting -->
+							<div class="title-sm">Социальные сети:</div>
+							<!-- BEGIN .setting -->
+							<div class="setting">
+								<div class="setting__social">
+									<ul class="setting__social-list">
+										<li>
+											<div class="setting__social-item">
+												<img src="http://placehold.it/50x50" alt=""/>
+												<span>facebook</span>
+											</div>	
+											<a href="#">Отключить</a>										
+										</li>
+										<li>
+											<div class="setting__social-item">
+												<img src="http://placehold.it/50x50" alt=""/>
+												<span>Vkontakte</span>
+											</div>
+											<a href="#">Отключить</a>
+										</li>
+										<li>
+											<div class="setting__social-item">
+												<img src="http://placehold.it/50x50" alt=""/>
+												<span>Twitter</span>
+											</div>
+											<a href="#">Отключить</a>
+										</li>
+									</ul>
+									<div class="setting__social-text">Привязка учётной записи на Newseek к аккаунту в социальной сети позволит входить на сайт с помощью одного клика. Можно привязать учётную запись сразу к нескольким аккаунтам.</div>
+								</div>
+							</div>
+							<!-- END .setting -->
+							<div class="title-sm">Поменять пароль:</div>
+							<!-- BEGIN .change-pass -->
+							<div class="change-pass">
+								<div class="field">
+									<div class="field__input">
+										<input type="text" placeholder="Текущий пароль">
+									</div>
+								</div>
+								<div class="field">
+									<div class="field__input">
+										<input type="text" placeholder="Новый пароль">
+									</div>
+								</div>
+								<div class="field">
+									<div class="field__input">
+										<input type="text" placeholder="Еще раз новый">
+									</div>
+								</div>
+								<div class="btn-wrap">
+									<button class="btn">Сохранить</button>
+								</div>								
+							</div>
+							<!-- END .change-pass -->
 						</div>
 					</div>
 				</div>

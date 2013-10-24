@@ -36,6 +36,20 @@
 		background: #f5f5f5 
 		&:first-child
 			padding: 20px
+.news_sm
+	padding: 0
+	border: none
+	.news__item
+		padding-top: 10px
+		margin-top: 10px
+		a
+			font-family: 'Open Sans', Arial, Tahoma, sans-serif
+			font-size: 13px
+			font-weight: 600 
+		span
+			font-size: 11px
+		.news__status
+			font-size: 13px
 .news__item
 	padding-top: 20px
 	margin-top: 20px
@@ -45,6 +59,11 @@
 		padding: 0
 		margin: 0
 		border: none
+.news__more
+	padding-top: 20px
+	text-align: center
+	.btn
+		min-width: 90px
 .news__pic
 	float: left
 	margin-right: 15px 
@@ -66,6 +85,9 @@
 		font-size: 13px
 		font-weight: 600 
 		color: #898989 
+	.news__status
+		font-size: 13px
+		color: #3cb878 
 .news__text	
 	margin-bottom: 15px
 	font-size: 14px
@@ -147,7 +169,7 @@
 		&:first-child
 			margin: 0 
 //select
-.select
+.select-btn
 	color: $blue
 	cursor: pointer
 	+no-sel
@@ -245,4 +267,285 @@
 				border-style: solid
 				border-width: 8px 8px 0 8px
 				border-color: $red transparent transparent transparent 
-	
+//switch
+.switch
+	display: block
+	position: relative
+	margin-bottom: 10px
+	padding: 1px 0 1px 50px 
+	cursor: pointer
+	+no-sel
+	input, i
+		position: absolute
+		top: 0
+		left: 0
+	input
+		opacity: 0
+		&:checked + i
+			border-color: #acd373
+			&:after
+				left: 0
+				background: #acd373 
+	i
+		position: absolute
+		top: 0
+		left: 0
+		width: 37px
+		height: 18px
+		border: 1px solid #acacac
+		+trans(all .1s linear)
+		&:after
+			content: ""
+			position: absolute
+			left: 18px
+			top: 0
+			right: 0
+			width: 19px
+			height: 18px
+			background: #acacac
+			+trans(all .1s linear)
+//setting
+.setting
+	padding-bottom: 10px
+	margin-bottom: 25px
+	border-bottom: 1px solid #ccc 
+	+clr
+.setting__column
+	float: left
+	width: 240px
+	margin-right: 20px
+	.radio
+		margin-bottom: 12px
+.setting__mail
+	span
+		margin-right: 5px
+		font-weight: 600
+		color: #898989
+	a
+		font-style: italic
+.setting__social-list
+	margin-bottom: 20px
+	+clr
+	li
+		float: left
+		margin-right: 10px
+		text-align: center
+		a
+			font-size: 12px
+.setting__social-item
+	width: 108px
+	height: 78px
+	margin-bottom: 5px
+	padding-top: 30px
+	border: 1px solid #dbdbdb
+	background: #f5f5f5
+	span
+		display: block
+		color: #898989 
+//keywords
+.keywords
+	margin-bottom: 50px
+.keywords__text
+	margin-bottom: 20px
+	a
+		display: inline-block
+		border-bottom: 1px dashed 
+		line-height: 1
+.keywords__list
+	margin-bottom: 20px 
+	+clr
+	li
+		float: left
+		margin-right: 10px		
+		a
+			display: block
+			border-bottom: 1px dashed 
+			line-height: 1
+//change-pass
+.change-pass
+	.field
+		margin-bottom: 10px
+	.btn-wrap
+		margin-top: 20px
+//hide-archive
+.hide-archive
+	float: right
+	height: 30px
+	padding: 0 10px 0 20px
+	margin: -6px 0 0 20px
+	border-left: 1px solid $bc 
+	line-height: 30px 
+//sort-date
+.sort-date
+	margin: -20px 0 30px 0
+	padding-bottom: 10px
+	border-bottom: 1px dashed $bc 
+	+clr
+	.select
+		float: right
+		margin-left: 10px
+//detail
+.detail
+	padding-bottom: 10px
+	margin-bottom: 30px
+	border-bottom: 1px solid $bc 
+	+clr
+	.title
+		float: left
+		padding: 0
+.detail__item
+	float: left
+	padding-left: 15px
+	margin: 1px 0 0 15px
+	border-left: 1px dashed $bc 
+	font-weight: 600 
+.detail__item_mod
+	float: right
+	padding-right: 10px
+	color: #252525 
+	span
+		color: #898989 
+//article
+.article
+	padding-bottom: 10px
+	border-bottom: 1px solid $bc
+	margin-bottom: 17px 
+	+clr	
+	img
+		float: right
+		margin: 0 0 20px 20px
+	p
+		margin-bottom: 20px
+.article__video
+	margin-bottom: 20px
+.article__detail
+	margin-bottom: 20px
+	+clr
+.article__source
+	float: right
+	margin-top: 2px
+	font-size: 12px
+	color: #898989 
+.artcle__detail-in
+	display: table
+	font-weight: 600 
+//gallery
+.gallery
+	margin-bottom: 30px
+.gallery__small
+	position: relative
+	padding: 0 42px
+	margin-bottom: 30px
+	height: 72px
+	font-size: 0
+.gallery__list
+	width: 100% !important
+	padding: 2px
+	div
+		padding: 2px
+		margin-right: 8px
+		img
+			display: block
+			opacity: .5 
+		&.cycle-slide-active
+			box-shadow: 0 0 0 2px $red inset
+			img
+				opacity: 1 
+.gallery__prev, .gallery__next
+	position: absolute
+	top: 2px
+	width: 30px
+	height: 72px
+	background: #f5f5f5
+	font-size: 0
+	i
+		display: inline-block
+		vertical-align: middle
+	&.disabled
+		cursor: default
+		i
+			opacity: .3
+.gallery__prev
+	left: 0
+	i
+		+s(prev)
+.gallery__next
+	right: 0
+	i
+		+s(next)
+.gallery__detail
+	padding: 5px 0 20px	
+	+clr
+.gallery__detail-in
+	display: table
+	font-size: 14px
+	font-weight: 600 
+	span
+		float: left
+		margin-right: 20px
+		color: #898989
+		font-weight: normal
+		i
+			margin: 0 5px
+			font-style: italic
+.gallery__source
+	float: right
+	margin-top: 2px
+	font-size: 12px
+	color: #898989 
+//panel
+.panel
+	padding-bottom: 17px
+	margin-bottom: 25px
+	border-bottom: 1px solid $bc  
+	.share
+		float: right
+		margin-top: 8px
+//l
+.l
+	+clr
+.l__col-1
+	float: left
+	width: 570px
+	margin-right: 30px
+.l__col-2 
+	overflow: hidden
+//comm
+.comm
+	margin-bottom: 30px
+.comm__info
+	margin-bottom: 20px
+	padding: 10px
+	background: #f5f5f5 
+	text-align: center
+	line-height: 1.5
+.comm__item
+	padding-bottom: 15px
+	margin-bottom: 15px
+	border-bottom: 1px dashed $bc 
+	+clr
+.comm__pic
+	float: left
+	margin-right: 10px 
+	img
+		display: block
+.comm__detail
+	display: table
+.comm__user
+	margin-bottom: 2px
+	a
+		margin-right: 4px
+		font-size: 12px
+		font-weight: 600 
+		color: #363636 
+	span
+		font-size: 11px
+		color: #898989 
+.comm__reply
+	padding-left: 20px 
+.comm__text
+	line-height: 1.2
+.comm__banned
+	line-height: 36px
+	font-style: italic
+	color: #898989 

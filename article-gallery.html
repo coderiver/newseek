@@ -1,0 +1,397 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<div class="wrap__in">
+		<!-- BEGIN .sidebar -->
+		<div class="sidebar">
+			<a class="logo" href="#">
+				<strong>Newseek</strong>
+				<span>Украина</span>
+			</a>
+			<div class="my">
+				<a href="#">Мой Newseek</a>
+			</div>
+			<nav class="nav">
+				<ul>
+					<li class="is-active"><a href="#">Главные новости</a></li>
+					<li><a href="#">Все новости</a></li>
+					<li><a href="#">Популярное</a></li>
+					<li><a href="#">Обсуждаемое</a></li>
+					<li><a href="#">Читать позже</a></li>
+					<li><a href="#">Радио</a></li>
+				</ul>
+			</nav>
+			<nav class="nav nav_mod">
+				<ul>
+					<li><a href="#">Политика</a></li>
+					<li><a href="#">Геополитика</a></li>
+					<li><a href="#">Происшествия</a></li>
+					<li><a href="#">Наука и технологии</a></li>
+					<li><a href="#">Экономика и бизнес</a></li>
+					<li><a href="#">Шоу-биз и культура</a></li>
+					<li><a href="#">Общество</a></li>
+					<li><a href="#">Здоровье</a></li>
+					<li><a href="#">Спорт</a></li>
+					<li><a href="#">Авто</a></li>
+					<li><a href="#">Блоги</a></li>
+				</ul>
+			</nav>
+			<div class="subscribe">
+				<a href="#">Подпишись на новости</a>
+			</div>
+			<div class="login">
+				<a href="#">Войти</a>
+			</div>
+		</div>
+		<!-- END .sidebar -->
+		<!-- BEGIN .container -->
+		<div class="container">
+			<!-- BEGIN .top -->
+			<div class="top">
+				<div class="region">
+					<div class="region__title">Регион новостей:</div>
+					<ul class="region__list">
+						<li><a href="#">Мир</a></li>
+						<li><a href="#">Украина</a></li>
+						<li class="is-active is-drop">
+							<a href="#"><span>Киев</span><i class="arr"></i></a>
+							<div class="region__drop">
+								<ul>
+									<li><a href="#">Винница</a></li>
+									<li><a href="#">Днепропетровск</a></li>
+									<li><a href="#">Донецк</a></li>
+									<li><a href="#">Житомир</a></li>
+								</ul>
+								<ul>
+									<li class="is-active"><a href="#">Киев</a></li>
+									<li><a href="#">Крым</a></li>
+									<li><a href="#">Луганск</a></li>
+									<li><a href="#">Луцк</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Львов</a></li>
+									<li><a href="#">Николаев</a></li>
+									<li><a href="#">Одесса</a></li>
+									<li><a href="#">Полтава</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Тернополь</a></li>
+									<li><a href="#">Харьков</a></li>
+									<li><a href="#">Херсон</a></li>
+									<li><a href="#">Хмельницкий</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search">
+					<button class="search__btn"><i></i></button>
+					<input class="search__field" type="text">
+				</div>
+				<div class="lang">
+					<div class="lang__current">
+						<i class="lang__ru"></i>
+						<span>RU</span>
+						<i class="arr"></i>
+						<i class="border"></i>
+					</div>
+					<ul class="lang__drop">
+						<li class="is-active"><a href="#"><i class="lang__ru"></i><span>RU</span><strong>Русский</strong></a></li>
+						<li><a href="#"><i class="lang__ua"></i><span>UA</span><strong>Українська</strong></a></li>
+						<li><a href="#"><i class="lang__eu"></i><span>EU</span><strong>English</strong></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .top -->
+			<!-- BEGIN .detail -->
+			<div class="detail">
+				<div class="title title_sm">Экономика и бизнес</div>
+				<div class="detail__item">17:15</div>
+				<div class="detail__item"><a href="#">НТВ</a></div>
+				<div class="detail__item detail__item_mod">Читают сейчас: <span>5</span></div>
+			</div>
+			<!-- END .detail -->
+			<!-- BEGIN .article -->
+			<div class="article">
+				<div class="title-big">Железный континент</div>
+				<!-- BEGIN .gallery -->
+				<div class="gallery">
+					<div class="gallery__big cycle-slideshow" 
+						data-cycle-fx="fade" 
+						data-cycle-timeout="0" 
+						data-cycle-next=".gallery__next" 
+						data-cycle-prev=".gallery__prev" 
+						data-allow-wrap="false">
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+					</div>
+					<div class="gallery__detail">
+						<div class="gallery__source">Фото: <a href="#">Wikipedia</a></div>
+						<div class="gallery__detail-in"></div>					
+					</div>				
+					<div class="gallery__small">
+						<button class="gallery__prev"><i></i></button>
+						<button class="gallery__next"><i></i></button>
+						<div id="tratata" class="gallery__list cycle-slideshow" 
+							data-cycle-fx="carousel" 
+							data-cycle-timeout="0" 
+							data-cycle-slides="> div"
+							data-cycle-carousel-visible="7" 
+							data-cycle-next=".gallery__next" 
+							data-cycle-prev=".gallery__prev" 
+							data-allow-wrap="false"
+							data-cycle-caption=".gallery__detail-in"
+							data-cycle-caption-template="<span>{{slideNum}}<i>/</i>{{slideCount}}</span>{{cycleTitle}}">
+							<div data-cycle-title="Описание фото 1"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 2"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 3"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 4"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 5"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 6"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 7"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 8"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 9"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 10"><img src="http://placehold.it/110x72"/></div>
+						</div>
+					</div>					
+				</div>
+				<!-- END .gallery -->
+				<p>Очередной выпуск цикла фотогалерей «Newseek.org» об экономиках мира, в которых главным источником богатства являются сырьевые ресурсы, (предыдущие рассказывали о Норвегии, Бразилии и Кот-д'Ивуаре), будет посвящен Австралии. Эта страна стала особенно важной для мировой экономики в последние годы, когда превратилась в главного поставщика для Китая.</p>				
+			</div>
+			<!-- END .article -->	
+			<!-- BEGIN .panel -->
+			<div class="panel">
+				<button class="btn js-show-comm">Комментарии (8)</button>
+				<!-- BEGIN .share -->
+				<div class="share"><img src="img/share.png" alt=""></div>
+				<!-- END .share -->				
+			</div>
+			<!-- END .panel -->
+			<!-- BEGIN .l -->
+			<div class="l">
+				<div class="l__col-1 js-comm" style="display: none">
+					<div class="title title_sm">Ваш комментарий</div>
+					<!-- BEGIN .comm -->
+					<div class="comm">
+						<div class="comm__info">Чтобы писать комментарии от индивидуального имени и получать уведомления об ответах на ваши комментарии, необходимо <a href="#">авторизироваться в системе</a></div>
+						<div class="comm__list">
+							<div class="comm__item">
+								<div class="comm__pic">
+									<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+								</div>
+								<div class="comm__detail">
+									<div class="comm__user"><a href="#">Гость</a><span>44 минуты назад</span></div>
+									<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+								</div>
+							</div>
+							<div class="comm__reply">
+								<div class="comm__item">
+									<div class="comm__pic">
+										<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+									</div>
+									<div class="comm__detail">
+										<div class="comm__user"><a href="#">Гость</a><span>» Сантехник Иванович 59 минут назад</span></div>
+										<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+									</div>
+								</div>
+								<div class="comm__reply">
+									<div class="comm__item">
+										<div class="comm__pic">
+											<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+										</div>
+										<div class="comm__detail">
+											<div class="comm__banned">Этот комментарий получил слишком много голосов "Против"</div>
+										</div>
+									</div>
+									<div class="comm__reply">
+										<div class="comm__item">
+											<div class="comm__pic">
+												<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+											</div>
+											<div class="comm__detail">
+												<div class="comm__user"><a href="#">Гость</a><span>» Сантехник Иванович 59 минут назад</span></div>
+												<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+											</div>
+										</div>
+										<div class="comm__reply">
+											<div class="comm__item">
+												<div class="comm__pic">
+													<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+												</div>
+												<div class="comm__detail">
+													<div class="comm__user"><a href="#">Гость</a><span>» Сантехник Иванович 59 минут назад</span></div>
+													<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comm__item">
+										<div class="comm__pic">
+											<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+										</div>
+										<div class="comm__detail">
+											<div class="comm__user"><a href="#">Гость</a><span>» Сантехник Иванович 59 минут назад</span></div>
+											<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+										</div>
+									</div>
+									<div class="comm__item">
+										<div class="comm__pic">
+											<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+										</div>
+										<div class="comm__detail">
+											<div class="comm__user"><a href="#">Гость</a><span>» Сантехник Иванович 59 минут назад</span></div>
+											<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+										</div>
+									</div>
+									<div class="comm__item">
+										<div class="comm__pic">
+											<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+										</div>
+										<div class="comm__detail">
+											<div class="comm__user"><a href="#">Гость</a><span>» Сантехник Иванович 59 минут назад</span></div>
+											<div class="comm__text">А вот был бы едросом, отделался бы условкой, или отсрочкой на 25 лет.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END .comm -->
+				</div>
+				<div class="l__col-2">
+					<div class="title title_sm">ДАЛЕЕ ПО РУБРИКЕ</div>
+					<!-- BEGIN .news -->
+					<div class="news news_sm">
+						<div class="news__item">
+							<div class="news__pic">
+								<a href="#"><img src="http://placehold.it/90x60"></a>
+							</div>
+							<div class="news__in">
+								<div class="news__title">
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+								</div>								
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__pic">
+								<a href="#"><img src="http://placehold.it/90x60"></a>
+							</div>
+							<div class="news__in">
+								<div class="news__title">
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+								</div>								
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__pic">
+								<a href="#"><img src="http://placehold.it/90x60"></a>
+							</div>
+							<div class="news__in">
+								<div class="news__title">
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+								</div>								
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__pic">
+								<a href="#"><img src="http://placehold.it/90x60"></a>
+							</div>
+							<div class="news__in">
+								<div class="news__title">
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+								</div>								
+							</div>
+						</div>
+						<div class="news__more">
+							<button class="btn">Еще</button>
+						</div>
+					</div>
+					<!-- END .news -->
+					<div class="title title_sm title_border">АКТУАЛЬНЫЕ НОВОСТИ</div>
+					<!-- BEGIN .news -->
+					<div class="news news_sm">
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span class="news__status">Сейчас читают 234</span></a>					
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span class="news__status">Дискуссия!</span></a>					
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a>					
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a>					
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a>					
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a>					
+							</div>
+						</div>
+						<div class="news__item">
+							<div class="news__title">
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a>					
+							</div>
+						</div>
+					</div>
+					<!-- END .news -->
+				</div>
+			</div>
+			<!-- END .l -->
+		</div>
+		<!-- END .container -->
+	</div>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="copyright">© Newseek 2013</div>
+		<div class="mail">Связатся с нами: <a href="mailto:info@newseek.org">info@newseek.org</a></div>
+		<ul class="social">
+			<li><a class="social__vk" href="#"><i></i></a></li>
+			<li><a class="social__gp" href="#"><i></i></a></li>
+			<li><a class="social__fb" href="#"><i></i></a></li>
+			<li><a class="social__tw" href="#"><i></i></a></li>
+		</ul>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>
