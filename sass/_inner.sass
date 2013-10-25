@@ -20,6 +20,11 @@
 				font-size: 11px
 		.news__text
 			font-size: 13px
+	+rt(960)
+		.news__list
+			float: none
+			width: auto
+			margin: 0 0 25px 0
 .news_no-border 	
 	border: none
 .news_all
@@ -50,6 +55,8 @@
 			font-size: 11px
 		.news__status
 			font-size: 13px
+	.news__more
+		text-align: center
 .news__item
 	padding-top: 20px
 	margin-top: 20px
@@ -59,16 +66,79 @@
 		padding: 0
 		margin: 0
 		border: none
+	&:hover
+		.news__title
+			a
+				color: $blue 
+		.read
+			display: block
 .news__more
 	padding-top: 20px
-	text-align: center
 	.btn
 		min-width: 90px
 .news__pic
+	position: relative
 	float: left
 	margin-right: 15px 
 	img
 		display: block
+	.read
+		display: none
+		position: absolute
+		right: 5px
+		bottom: 5px
+.read
+	position: relative
+	button
+		width: 28px
+		height: 28px
+		background: $blue
+		border: 1px solid #2157a1
+		font-size: 0
+		i
+			display: inline-block
+			+s(read)
+	&:hover
+		button
+			background: $red 
+			border-color: $red
+		.tooltip
+			display: block
+	&.is-active
+		button
+			background: #3cb878
+			border-color: #3cb878 
+			i
+				+s(ok)
+.tooltip
+	display: none
+	position: absolute
+	bottom: 34px
+	left: 50%
+	width: 200px
+	margin-left: -100px
+	text-align: center
+	font-size: 0
+	span
+		position: relative
+		display: inline-block
+		padding: 2px 7px
+		background: rgb(0,0,0) 
+		background: rgba(0,0,0,.8) 
+		color: #FFF 
+		font-size: 12px
+		&:after
+			content: ""
+			position: absolute
+			bottom: -5px
+			left: 50%
+			margin-left: -5px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 5px 5px 0 5px
+			border-color: rgb(0,0,0) transparent transparent transparent
+			border-color: rgba(0,0,0,.8) transparent transparent transparent
 .news__in
 	display: table
 .news__title
@@ -79,8 +149,11 @@
 		font-size: 26px
 		color: #252525 
 		line-height: 1.2
+		&:hover
+			text-decoration: underline
 	span
 		margin-left: 5px
+		text-decoration: none
 		font-family: 'Open Sans', Arial, Tahoma, sans-serif
 		font-size: 13px
 		font-weight: 600 
@@ -292,6 +365,7 @@
 		left: 0
 		width: 37px
 		height: 18px
+		background: #FFF 
 		border: 1px solid #acacac
 		+trans(all .1s linear)
 		&:after
@@ -345,6 +419,10 @@
 //keywords
 .keywords
 	margin-bottom: 50px
+.keywords_mod
+	margin: 0
+	.field
+		margin-bottom: 30px 
 .keywords__text
 	margin-bottom: 20px
 	a
@@ -393,6 +471,9 @@
 	.title
 		float: left
 		padding: 0
+	.read
+		float: right
+		margin-top: -4px
 .detail__item
 	float: left
 	padding-left: 15px
@@ -411,7 +492,7 @@
 	border-bottom: 1px solid $bc
 	margin-bottom: 17px 
 	+clr	
-	img
+	& > img
 		float: right
 		margin: 0 0 20px 20px
 	p
@@ -519,7 +600,7 @@
 	background: #f5f5f5 
 	text-align: center
 	line-height: 1.5
-.comm__item
+.comm__item, .comm__form
 	padding-bottom: 15px
 	margin-bottom: 15px
 	border-bottom: 1px dashed $bc 
@@ -549,3 +630,205 @@
 	line-height: 36px
 	font-style: italic
 	color: #898989 
+.comm__form, .comm__form-in
+	overflow: hidden
+.comm__form-in
+	.field__area	
+		margin-bottom: 10px
+		textarea
+			height: 36px
+	.btn
+		height: 34px
+//popup
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 200px 0
+	background: rgba(0,0,0,.5) 
+	overflow: auto
+.popup
+	position: relative
+	width: 620px
+	padding: 45px 50px
+	margin: 0 auto
+	background: #FFF
+.popup_enter
+	width: 535px 
+.popup_reg
+	width: 520px 
+.popup_mail
+	width: 580px
+.popup__close
+	position: absolute
+	top: 20px
+	right: 20px
+	+s(popup-close) 
+.popup__content
+	p
+		padding-top: 15px
+		font-size: 14px
+		&:first-child
+			padding: 0 
+		i
+			color: #898989 
+.popup__footer 	
+	padding: 35px 50px
+	margin: 0 -50px -45px
+	background: #f5f5f5  
+	font-size: 18px
+	font-weight: 600 
+.popup__title
+	margin-bottom: 25px 
+	font-weight: 600 
+	font-size: 18px
+.popup__title_mod
+	margin-bottom: 10px
+	font-weight: normal 
+.popup__subscribe
+	margin-bottom: 35px 
+	.field__input
+		width: 260px
+.popup__subscribe_edit
+	.field
+		font-size: 0
+	.field__input, .field__value, .field__edit
+		display: inline-block
+		vertical-align: middle
+	.field__input
+		margin-right: 5px
+	.field__value
+		margin-right: 5px
+		font-size: 18px
+		font-style: italic
+	.field__edit
+		margin-top: 3px
+		font-style: italic
+		font-size: 13px
+.popup__cat
+	margin-bottom: 40px
+.popup__cat-list
+	+clr
+	ul
+		float: left
+		margin-left: 30px
+		&:first-child
+			margin: 0
+		li
+			margin-top: 12px
+			&:first-child
+				margin: 0
+.popup__message
+	margin: 40px -50px -45px
+	padding: 15px 50px
+	background: #ff6262
+	font-size: 14px
+	color: #FFF
+	font-weight: 600   
+//enter
+.enter__social
+	margin-bottom: 45px
+	font-size: 0
+	li
+		position: relative
+		display: inline-block
+		padding-left: 20px
+		margin-left: 20px
+		vertical-align: middle
+		a
+			display: block
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 0
+			width: 1px
+			height: 34px
+			margin-top: -17px
+			border-left: 1px dashed $bc 
+		&:first-child
+			padding: 0
+			margin: 0
+			&:before
+				display: none
+.enter__fb
+	+s(enter-fb)
+.enter__gp
+	+s(enter-gp)
+.enter__tw
+	+s(enter-tw)
+.enter__lj
+	+s(enter-lj)
+.enter__in
+	+s(enter-in)
+.enter__bl
+	+s(enter-bl)
+.enter__ig
+	+s(enter-ig)
+.enter__form
+	margin-bottom: 30px
+	.field
+		margin-bottom: 20px
+		+clr
+	.field__input
+		float: left		
+		width: 250px
+		&:first-child
+			margin-right: 30px
+//reg
+.reg
+	.field
+		margin-bottom: 20px
+		+clr
+	.field__input
+		float: left
+		width: 250px
+		margin-left: 20px
+		&:first-child
+			margin: 0
+	.btn
+		margin-top: 10px
+//my
+.my__text
+	margin-bottom: 25px
+	font-size: 14px
+	font-weight: 600 
+.my__setting
+	padding: 12px 10px 12px 20px
+	background: #f5f5f5 
+	+no-sel
+	.switch
+		padding: 0 50px 0 0 
+		margin: 0
+		font-size: 14px
+		font-weight: 600 
+		input, i
+			left: auto
+			right: 0
+.my__main
+	margin-bottom: 55px
+	.my__setting
+		margin-bottom: 5px
+.my__main-text
+	font-size: 12px
+.my__stats-on, .my__stats-off
+	.my__setting
+		position: relative
+		padding-left: 30px
+		margin-bottom: 2px 
+.my__stats-on
+	margin-bottom: 20px 
+.my__drag
+	position: absolute
+	top: 3px
+	left: 3px
+	+s(drag)
+//new-mail
+.new-mail
+	.field
+		.field__input
+			margin-bottom: 20px
+		.field__input_mod
+			width: 140px 

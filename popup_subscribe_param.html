@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .popup -->
+<div class="overlay">
+	<div class="popup">
+		<button class="popup__close"></button>
+		<div class="title">Параметры РАССЫЛКИ</div>
+		<div class="popup__subscribe popup__subscribe_edit">
+			<div class="field">
+				<div class="field__input" style="display: none">
+					<input type="text" value="Leonov.art@gmail.com">
+				</div>
+				<div class="field__value">Leonov.art@gmail.com</div>
+				<div class="field__edit"><a href="#">поменять почту</a></div>
+			</div>
+		</div>
+		<div class="popup__cat">
+			<div class="popup__title popup__title_mod">Выберете рубрики:</div>
+			<div class="popup__cat-list">
+				<ul>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Политика</label></li>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Геополитика</label></li>
+					<li><label class="checkbox"><input type="checkbox"><i></i>Происшествия</label></li>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Наука и технологии</label></li>
+				</ul>
+				<ul>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Экономика и бизнес</label></li>
+					<li><label class="checkbox"><input type="checkbox"><i></i>Шоу-биз и культура</label></li>
+					<li><label class="checkbox"><input type="checkbox"><i></i>Общество</label></li>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Здоровье</label></li>
+				</ul>
+				<ul>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Спорт</label></li>
+					<li><label class="checkbox"><input type="checkbox"><i></i>Авто</label></li>
+					<li><label class="checkbox"><input type="checkbox" checked=""><i></i>Блоги</label></li>
+				</ul>
+			</div>
+		</div>
+		<!-- BEGIN .keywords -->
+		<div class="keywords keywords_mod">
+			<div class="popup__title popup__title_mod">Ключевые слова:</div>
+			<ul class="keywords__list">									
+				<li><a href="#">Apple</a></li>
+				<li><a href="#">Биржка</a></li>
+				<li><a href="#">Акции</a></li>
+			</ul>
+			<div class="field">
+				<div class="field__input">
+					<input type="text" placeholder="Добавить новое слово">
+				</div>
+			</div>
+			<button class="btn btn_blue">СОХРАНИТЬ</button>
+		</div>
+		<!-- END .keywords -->
+
+	</div>
+</div>
+<!-- END .popup -->
+</body>
+</html>

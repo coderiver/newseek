@@ -2,16 +2,23 @@
 * 
 	margin: 0
 	padding: 0 
+	//box-shadow: 0 0 0 1px $red
 	//-webkit-text-size-adjust: none
 html, body 
 	height: 100%
 body
+	-webkit-transition: -webkit-transform .3s linear 
+	-moz-transition: -moz-transform .3s linear
+	-o-transition: -o-transform .3s linear
+	transition: transform .3s linear
 	font-family: 'Open Sans', Arial, Tahoma, sans-serif
 	font-weight: normal 
 	font-size: 13px
 	line-height: 1.4
-	//-webkit-transform: translate3d(0,0,0);
-	//-weblit-backface-visibility: hidden;
+	+rt(720)
+		background: #f1f3f5 
+	//-webkit-transform: translate3d(0,0,0)
+	//-weblit-backface-visibility: hidden
 // resets
 a img, fieldset 
 	border: none
@@ -35,15 +42,35 @@ table
 	border-spacing: 0
 	border-collapse: collapse
 // common styles
+.menu-open, .settings-open
+	.wrap
+		overflow: visible
+.menu-open
+	overflow: hidden 	
+	+rt(720)
+		-webkit-transform: translate3d(80%, 0, 0)
+		-moz-transform: translate3d(80%, 0, 0)
+		transform: translate3d(80%, 0, 0)		
+.settings-open
+	overflow: hidden 	
+	+rt(720)
+		-webkit-transform: translate3d(-80%, 0, 0)
+		-moz-transform: translate3d(-80%, 0, 0)
+		transform: translate3d(-80%, 0, 0)		
 .wrap
 	min-height: 100%
 	height: auto !important
 	height: 100%
 	margin: 0 auto -60px
+	+rt(720)
+		background: #fff 
+		overflow: hidden
 .wrap__in, .footer__in
 	position: relative
 	width: 1150px
 	margin: 0 auto
+	+rt(1200)
+		width: auto
 .push
 	height: 60px
 	clear: both
@@ -85,9 +112,203 @@ table
 	left: auto
 	bottom: 0
 	right: auto
-	width: 180px	 
+	width: 192px
+	+trans(width .2s linear)
+	overflow: hidden
+	z-index: 100
+	+rt(1200)
+		left: 0
+		width: 25px
+		&.is-show
+			width: 192px + 45px
+			.sidebar__btn
+				background: $red 
+				i
+					+s(sidebar-arr-a)
+			.sidebar__in
+				padding-left: 45px
+	+rt(720)
+		position: relative
+		width: 100%		
+		overflow: visible 
+.sidebar__in
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 180px
 	padding-right: 10px
 	border-right: 2px solid $bc 
+	background: rgb(255,255,255) 
+	background: rgba(255,255,255,.9)
+	+trans(padding-left .2s linear)
+	+rt(1200)
+		padding-left: 15px
+		width: auto
+	+rt(720)
+		position: relative
+		height: 94px
+		padding: 0
+		border: none
+		background: #252525
+.sidebar__user
+	display: none
+	height: 80px
+	padding: 7px
+	background: #1e1e1e 
+	.btn
+		width: 100%
+		height: 80px
+		font-size: 0
+		i, span
+			display: inline-block
+			vertical-align: middle
+		i
+			margin-right: 18px
+			+s(sidebar-enter) 
+		span
+			font-size: 32px
+	a
+		display: block
+		padding: 8px 8px 8px 32px
+		height: 64px
+		background: #FFF
+		white-space: nowrap
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
+		line-height: 64px 
+		font-size: 32px
+		overflow: hidden
+		img
+			float: right
+	+rt(720)
+		display: block
+.sidebar__menu	
+	+rt(720)
+		position: absolute
+		top: 0
+		left: 0
+		width: 80%
+		padding-left: 20%
+		background: #fff 
+		-webkit-transform: translate3d(-100%, 0, 0)
+		-moz-transform: translate3d(-100%, 0, 0)
+		transform: translate3d(-100%, 0, 0)
+.sidebar__btn-menu, .sidebar__btn-settings
+	position: absolute
+	top: 0
+	display: none
+	width: 94px
+	height: 94px
+	background: none 
+	font-size: 0
+	i
+		display: inline-block
+		vertical-align: middlem 
+	+rt(720)
+		display: block
+.sidebar__btn-menu
+	left: 0
+	i
+		+s(sidebar-menu)
+	&.is-active
+		i
+			+s(sidebar-menu-a)
+.sidebar__btn-settings
+	right: 0
+	i
+		+s(sidebar-settings)
+	&.is-active
+		i
+			+s(sidebar-settings-a)
+.sidebar__btn
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	width: 25px
+	background: #ebebeb 
+	overflow: visible
+	i
+		position: absolute
+		top: 65px
+		left: 9px
+		+s(sidebar-arr)
+	&:hover
+		background: $red 
+		i
+			+s(sidebar-arr-h)
+	+rt(1200)
+		display: block
+	+rt(720)
+		display: none
+.tuning
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	width: 80%
+	padding-right: 20%
+	-webkit-transform: translate3d(100%, 0, 0)
+	-moz-transform: translate3d(100%, 0, 0)
+	transform: translate3d(100%, 0, 0)
+	+rt(720)
+		display: block	
+.tuning__title
+	padding: 20px 17px 10px
+	font-size: 24px
+	color: #7c8896  
+.tuning__lang	 
+	padding: 30px
+	font-size: 0
+	a
+		display: inline-block
+		margin-left: 20px
+		padding: 20px
+		background: #f1f3f5
+		vertical-align: top
+		i
+			display: block
+		&.is-active
+			background: $red 
+		&:first-child
+			margin: 0
+.tuning__personal, .tuning__lang
+	margin: 0 7px	
+	background: #FFF
+	.switch
+		margin-top: 25px
+		padding: 0 96px 0 0
+		font-size: 24px
+		i
+			left: auto
+			right: 0
+			width: 62px
+			height: 30px
+			border-width: 2px
+			&:after
+				left: 30px
+				width: 32px
+				height: 30px
+		&:first-child
+			margin: 0
+.tuning__personal-item
+	padding: 30px
+	border-top: 2px solid #f1f3f5 
+	&:first-child
+		border: none
+.tuning__personal-info
+	padding: 30px 120px 0 0
+	font-size: 18px
+	color: #898989 
+.tuning__lang-ru
+	+s(tuning-ru)
+.tuning__lang-ua
+	+s(tuning-ua)
+.tuning__lang-eu
+	+s(tuning-eu)
 .logo
 	display: block
 	padding: 25px 0
@@ -102,13 +323,28 @@ table
 		font-size: 39px
 	span
 		font-weight: bold
-.my
-	padding: 13px 10px
+	+rt(720)
+		border: none
+		color: #FFF 
+		strong
+			font-size: 44px
+		span
+			display: none
+.my-newseek	
 	border-bottom: 1px solid $bc
 	a
+		display: block
+		padding: 13px 10px
 		font-size: 15px
 		font-weight: 600 
 		color: #363636 
+	+rt(720)
+		border: 7px solid #f1f3f5
+		border-width: 0 7px 7px
+		a
+			padding: 17px 30px
+			font-size: 32px
+			color: #7da7d9 
 .nav
 	padding: 13px 10px 15px
 	border-bottom: 1px solid $bc 
@@ -122,7 +358,21 @@ table
 	a
 		font-size: 15px
 		color: #363636 
-		font-weight: 600 
+		font-weight: 600
+	+rt(720)
+		padding: 0
+		border: 7px solid #f1f3f5
+		border-width: 0 7px 7px
+		li
+			margin: 0
+			border-top: 2px solid #f1f3f5
+			&:first-child
+				border: none
+		a
+			display: block
+			padding: 17px 30px
+			font-size: 32px
+			color: #7da7d9 
 .nav_mod
 	li
 		margin-top: 10px
@@ -130,10 +380,16 @@ table
 		font-size: 13px
 		font-weight: normal
 		color: #464646
+	+rt(720)
+		a
+			font-size: 24px
+			color: #7da7d9 
 .subscribe, .login
 	padding: 14px 10px
 	a
 		color: #363636 
+	+rt(720)
+		display: none
 .subscribe
 	border-bottom: 1px solid $bc 
 .login
@@ -154,12 +410,19 @@ table
 //container
 .container
 	width: 930px
-	padding-left: 1150px - 930px
+	padding-left: 220px
+	+rt(1200)
+		width: auto
+		padding: 0 10px 0 40px
+	+rt(720)
+		padding: 0
 .top
 	position: relative
 	height: 48px
 	margin-bottom: 35px
 	border-bottom: 2px solid $bc 
+	+rt(720)
+		display: none
 .region
 	float: left
 	height: 48px
@@ -253,6 +516,32 @@ table
 	height: 28px
 	margin: 9px 0 0 22px
 	border: 1px solid $bc
+.search_sidebar
+	position: relative
+	display: none
+	float: none
+	height: 69px
+	margin: 0
+	padding-left: 69px
+	border: 7px solid #f1f3f5
+	box-shadow: 0 0 0 2px #c5ced9 inset
+	.search__btn
+		position: absolute
+		top: 0
+		left: 0
+		width: 69px
+		height: 69px
+		i
+			+s(sidebar-search)
+	.search__field 
+		width: 100%
+		height: 69px
+		padding: 0 20px 0 0
+		background: none
+		+box	
+		font-size: 24px
+	+rt(720)
+		display: block
 .search__btn
 	float: left
 	width: 28px
@@ -359,6 +648,7 @@ table
 .footer
 	position: relative
 	background: #ebebeb 
+	z-index: 200 
 .footer__in
 	height: 60px
 .copyright
@@ -439,11 +729,24 @@ table
 				border-radius: 50%
 .field__input
 	input
-		height: 30px
-		padding: 0 10px
+		width: 100%
+		height: 38px
+		padding: 0 15px
 		border: 1px solid #acacac
+		+box
+	&.is-error
+		input
+			border-color: $red 
+.field__area
+	textarea
+		display: block
+		width: 100%
+		padding: 7px 12px
+		border: 1px solid #acacac
+		resize: vertical
+		+box
 .btn
-	height: 37px
+	height: 38px
 	padding: 0 15px
 	background: #f5f5f5  
 	color: #898989 
@@ -451,6 +754,11 @@ table
 	&.is-active
 		background: $red 
 		color: #fff 
+.btn_invercion
+	background: #FFF
+.btn_blue
+	background: $blue
+	color: #FFF  
 .select
 	position: relative
 	cursor: pointer

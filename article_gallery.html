@@ -23,7 +23,7 @@
 				<strong>Newseek</strong>
 				<span>Украина</span>
 			</a>
-			<div class="my">
+			<div class="my-newseek">
 				<a href="#">Мой Newseek</a>
 			</div>
 			<nav class="nav">
@@ -56,7 +56,7 @@
 			</div>
 			<div class="login">
 				<a href="#">Войти</a>
-			</div>
+			</div>			
 		</div>
 		<!-- END .sidebar -->
 		<!-- BEGIN .container -->
@@ -124,21 +124,68 @@
 				<div class="detail__item">17:15</div>
 				<div class="detail__item"><a href="#">НТВ</a></div>
 				<div class="detail__item detail__item_mod">Читают сейчас: <span>5</span></div>
+				<!-- BEGIN .read -->
+				<div class="read">
+					<button><i></i></button>
+					<div class="tooltip"><span>Читать позже</span></div>
+				</div>
+				<!-- END .read -->
 			</div>
 			<!-- END .detail -->
 			<!-- BEGIN .article -->
 			<div class="article">
-				<div class="title-big">Внимательно читайте договор</div>
-				<div class="article__video">
-					<img src="http://placehold.it/930x530" alt=""/>
+				<div class="title-big">Железный континент</div>
+				<!-- BEGIN .gallery -->
+				<div class="gallery">
+					<div class="gallery__big cycle-slideshow" 
+						data-cycle-fx="fade" 
+						data-cycle-timeout="0" 
+						data-cycle-next=".gallery__next" 
+						data-cycle-prev=".gallery__prev" 
+						data-allow-wrap="false">
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+						<img src="http://placehold.it/930x620" alt=""/>
+					</div>
+					<div class="gallery__detail">
+						<div class="gallery__source">Фото: <a href="#">Wikipedia</a></div>
+						<div class="gallery__detail-in"></div>					
+					</div>				
+					<div class="gallery__small">
+						<button class="gallery__prev"><i></i></button>
+						<button class="gallery__next"><i></i></button>
+						<div id="tratata" class="gallery__list cycle-slideshow" 
+							data-cycle-fx="carousel" 
+							data-cycle-timeout="0" 
+							data-cycle-slides="> div"
+							data-cycle-carousel-visible="7" 
+							data-cycle-next=".gallery__next" 
+							data-cycle-prev=".gallery__prev" 
+							data-allow-wrap="false"
+							data-cycle-caption=".gallery__detail-in"
+							data-cycle-caption-template="<span>{{slideNum}}<i>/</i>{{slideCount}}</span>{{cycleTitle}}">
+							<div data-cycle-title="Описание фото 1"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 2"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 3"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 4"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 5"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 6"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 7"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 8"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 9"><img src="http://placehold.it/110x72"/></div>
+							<div data-cycle-title="Описание фото 10"><img src="http://placehold.it/110x72"/></div>
+						</div>
+					</div>					
 				</div>
-				<div class="article__detail">
-					<div class="article__source">Видео: <a href="#">Youtube</a></div>
-					<div class="artcle__detail-in">Тиньков хочет засудить клиента</div>
-				</div>
-				<p>Очередной выпуск цикла фотогалерей «Newseek.org» об экономиках мира, в которых главным источником богатства являются сырьевые ресурсы, (предыдущие рассказывали о Норвегии, Бразилии и Кот-д'Ивуаре), будет посвящен Австралии. Эта страна стала особенно важной для мировой экономики в последние годы, когда превратилась в главного поставщика для Китая.</p>	
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quibusdam, sapiente facere similique quis odio animi earum ut nihil quae minima eum error iste illo corporis culpa assumenda hic fugit!</p>			
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, dicta, blanditiis iusto officia nesciunt amet ratione quos ullam sit quibusdam eaque quisquam ea voluptatum dolores minima iste commodi neque quae.</p>
+				<!-- END .gallery -->
+				<p>Очередной выпуск цикла фотогалерей «Newseek.org» об экономиках мира, в которых главным источником богатства являются сырьевые ресурсы, (предыдущие рассказывали о Норвегии, Бразилии и Кот-д'Ивуаре), будет посвящен Австралии. Эта страна стала особенно важной для мировой экономики в последние годы, когда превратилась в главного поставщика для Китая.</p>				
 			</div>
 			<!-- END .article -->	
 			<!-- BEGIN .panel -->
@@ -157,6 +204,19 @@
 					<div class="comm">
 						<div class="comm__info">Чтобы писать комментарии от индивидуального имени и получать уведомления об ответах на ваши комментарии, необходимо <a href="#">авторизироваться в системе</a></div>
 						<div class="comm__list">
+							<div class="comm__form">
+								<div class="comm__pic">
+									<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+								</div>
+								<div class="comm__form-in">
+									<div class="field">
+										<div class="field__area">
+											<textarea placeholder="Текст сообщения"></textarea>
+										</div>
+										<button class="btn">Комментировать</button>
+									</div>
+								</div>
+							</div>
 							<div class="comm__item">
 								<div class="comm__pic">
 									<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
@@ -177,6 +237,22 @@
 									</div>
 								</div>
 								<div class="comm__reply">
+									<!-- BEGIN .comm__form -->
+									<div class="comm__form is-active">
+										<div class="comm__pic">
+											<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>
+										</div>
+										<div class="comm__form-in">
+											<div class="field">
+												<div class="field__area">
+													<textarea>А кто это сделал...</textarea>
+												</div>
+												<button class="btn">Комментировать</button>
+												<button class="btn btn_invercion">Отмена</button>
+											</div>
+										</div>
+									</div>
+									<!-- END .comm__form -->
 									<div class="comm__item">
 										<div class="comm__pic">
 											<a href="#"><img src="http://placehold.it/36x36" alt=""/></a>

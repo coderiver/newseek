@@ -72,14 +72,12 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	font-family: 'PT Serif', Arial, Tahoma, serif
 //media query
 @mixin rt($media)
-	@if $media == 1920
-		@media only screen and (max-width: 1920px)
+	@if $media == 1200
+		@media only screen and (max-width: 1200px)
 			@content
-	@else if $media == 1600
-		@media only screen and (max-width: 1600px)
+	@else if $media == 960
+		@media only screen and (max-width: 960px)
 			@content
-	@else if $media == 1380
-		@media only screen and (max-width: 1380px)
+	@else if $media == 720
+		@media only screen and (max-width: 720px)
 			@content
-	@else if $media == 1120
-		@media only screen and (max-width: 1120px)
