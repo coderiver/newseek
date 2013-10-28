@@ -17,44 +17,63 @@
 	<div class="wrap__in">
 		<!-- BEGIN .sidebar -->
 		<div class="sidebar">
-			<a class="logo" href="#">
-				<strong>Newseek</strong>
-				<span>Украина</span>
-			</a>
-			<div class="my-newseek">
-				<a href="#">Мой Newseek</a>
+			<div class="sidebar__in">
+				<button class="sidebar__btn-menu js-sidebar-menu"><i></i></button>
+				<button class="sidebar__btn-settings js-sidebar-settings"><i></i></button>
+				<a class="logo" href="#">
+					<strong>Newseek</strong>
+					<span>Украина</span>
+				</a>
+				<div class="sidebar__menu">
+					<div class="sidebar__user">
+						<button class="btn btn_blue"><i></i><span>Войти</span></button>
+					</div>
+					<div class="sidebar__user">
+						<a href="#"><img src="http://placehold.it/31x31" alt=""/>Ваш профайл</a>			
+					</div>
+					<!-- BEGIN .search -->
+					<div class="search search_sidebar">
+						<button class="search__btn"><i></i></button>
+						<input class="search__field" type="text">
+					</div>
+					<!-- END .search -->
+					<div class="my-newseek">
+						<a href="#">Мой Newseek</a>
+					</div>
+					<nav class="nav">
+						<ul>
+							<li class="is-active"><a href="#">Главные новости</a></li>
+							<li><a href="#">Все новости</a></li>
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">Обсуждаемое</a></li>
+							<li><a href="#">Читать позже</a></li>
+							<li><a href="#">Радио</a></li>
+						</ul>
+					</nav>
+					<nav class="nav nav_mod">
+						<ul>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Геополитика</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Наука и технологии</a></li>
+							<li><a href="#">Экономика и бизнес</a></li>
+							<li><a href="#">Шоу-биз и культура</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Здоровье</a></li>
+							<li><a href="#">Спорт</a></li>
+							<li><a href="#">Авто</a></li>
+							<li><a href="#">Блоги</a></li>
+						</ul>
+					</nav>
+					<div class="subscribe">
+						<a href="#">Подпишись на новости</a>
+					</div>
+					<div class="login">
+						<a href="#">Войти</a>
+					</div>
+				</div>				
 			</div>
-			<nav class="nav">
-				<ul>
-					<li><a href="#">Главные новости</a></li>
-					<li><a href="#">Все новости</a></li>
-					<li class="is-active"><a href="#">Популярное</a></li>
-					<li><a href="#">Обсуждаемое</a></li>
-					<li><a href="#">Читать позже</a></li>
-					<li><a href="#">Радио</a></li>
-				</ul>
-			</nav>
-			<nav class="nav nav_mod">
-				<ul>
-					<li><a href="#">Политика</a></li>
-					<li><a href="#">Геополитика</a></li>
-					<li><a href="#">Происшествия</a></li>
-					<li><a href="#">Наука и технологии</a></li>
-					<li><a href="#">Экономика и бизнес</a></li>
-					<li><a href="#">Шоу-биз и культура</a></li>
-					<li><a href="#">Общество</a></li>
-					<li><a href="#">Здоровье</a></li>
-					<li><a href="#">Спорт</a></li>
-					<li><a href="#">Авто</a></li>
-					<li><a href="#">Блоги</a></li>
-				</ul>
-			</nav>
-			<div class="subscribe">
-				<a href="#">Подпишись на новости</a>
-			</div>
-			<div class="login">
-				<a href="#">Войти</a>
-			</div>
+			<button class="sidebar__btn js-sidebar-btn"><i></i></button>
 		</div>
 		<!-- END .sidebar -->
 		<!-- BEGIN .container -->
@@ -117,6 +136,50 @@
 			</div>
 			<!-- END .top -->
 			<div class="title-wrap">
+				<div class="region-mob js-region-mob">
+					<div class="region-mod__head">В Украине<i class="arr"></i></div>
+					<div class="region-mob__down">
+						<ul class="region-mob__list-main">
+							<li><a href="#">За сегодня</a></li>
+							<li class="is-active"><a href="#">За неделю</a></li>
+							<li><a href="#">За месяц</a></li>
+						</ul>
+						<ul class="region-mob__list-main">
+							<li><a href="#">Мир</a></li>
+							<li class="is-active"><a href="#">Украина</a></li>
+						</ul>
+						<ul class="region-mob__list-sub">
+							<li>
+								<ul>
+									<li><a href="#">Винница</a></li>
+									<li><a href="#">Днепропетровск</a></li>
+									<li><a href="#">Донецк</a></li>
+									<li><a href="#">Житомир</a></li>
+									<li><a href="#">Киев</a></li>
+									<li><a href="#">Крым</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="#">Луганск</a></li>
+									<li><a href="#">Луцк</a></li>
+									<li><a href="#">Львов</a></li>
+									<li><a href="#">Николаев</a></li>
+									<li><a href="#">Одесса</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="#">Тернополь</a></li>
+									<li><a href="#">Харьков</a></li>
+									<li><a href="#">Херсон</a></li>
+									<li><a href="#">Хмельницкий</a></li>
+									<li><a href="#">Полтава</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>	
 				<!-- BEGIN .sort -->
 				<ul class="sort">
 					<li class="is-active"><a href="#">Сегодня</a></li>
@@ -134,7 +197,7 @@
 					</div>
 					<div class="news__in">
 						<div class="news__title">
-							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 						</div>
 						<div class="news__text">
 							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа.</p>
@@ -148,7 +211,7 @@
 					</div>
 					<div class="news__in">
 						<div class="news__title">
-							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 						</div>
 						<div class="news__text">
 							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vero magni ipsum modi ad qui tempora dolorum praesentium reiciendis numquam magnam sequi consequatur consectetur eaque atque aliquid distinctio voluptatem vel!</p>
@@ -161,7 +224,7 @@
 					</div>
 					<div class="news__in">
 						<div class="news__title">
-							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 						</div>
 						<div class="news__text">
 							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vero magni ipsum modi ad qui tempora dolorum praesentium reiciendis numquam magnam sequi consequatur consectetur eaque atque aliquid distinctio voluptatem vel!</p>
@@ -174,7 +237,7 @@
 					</div>
 					<div class="news__in">
 						<div class="news__title">
-							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 						</div>
 						<div class="news__text">
 							<p>Общественные активисты, пикетирующие в Киеве спецприемник для лиц, к которым применен административный арест, требуют Виктора Януковича освободить активистов Егора Соболева, Игоря Луценко и Алексея Германа. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vero magni ipsum modi ad qui tempora dolorum praesentium reiciendis numquam magnam sequi consequatur consectetur eaque atque aliquid distinctio voluptatem vel!</p>
@@ -186,6 +249,31 @@
 			<!-- END .news -->			
 		</div>
 		<!-- END .container -->
+		<!-- BEGIN .tuning -->
+		<div class="tuning">
+			<div class="tuning__title">Язык интерфейса</div>
+			<div class="tuning__lang">
+				<a class="is-active" href="#"><i class="tuning__lang-ru"></i></a>
+				<a href="#"><i class="tuning__lang-ua"></i></a>
+				<a href="#"><i class="tuning__lang-eu"></i></a>
+			</div>
+			<div class="tuning__title">Язык статей</div>
+				<div class="tuning__lang">
+					<label class="switch"><input type="checkbox" checked=""><i></i>Русские</label>
+					<label class="switch"><input type="checkbox"><i></i>Українські</label>
+				</div>
+			<div class="tuning__title">Личные настройки</div>
+			<div class="tuning__personal">
+				<div class="tuning__personal-item">
+					<label class="switch"><input type="checkbox" checked=""><i></i>Не показывать прочитанные статьи</label>
+				</div>
+				<div class="tuning__personal-item">
+					<label class="switch"><input type="checkbox"><i></i>Сделать страницу «Мой Newseek» Главной</label>
+					<div class="tuning__personal-info">При входе на сайт будет открыватся «Мой Newseek»</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .tuning -->
 	</div>
 	<div class="push"></div>
 </section>

@@ -1,10 +1,17 @@
 @import "base"
 //styles for inner pages
+.news-region-current
+	+rt(720)
+		display: none
 //news
 .news
 	padding-bottom: 30px
 	margin-bottom: 25px
 	border-bottom: 1px solid $bc
+	+rt(720)
+		margin: 0
+		padding-bottom: 10px
+		border: none
 .news_grid
 	padding-bottom: 20px
 	+clr
@@ -25,6 +32,22 @@
 			float: none
 			width: auto
 			margin: 0 0 25px 0
+	+rt(720)
+		padding-bottom: 0
+		& > .news__item	
+			margin: 0
+			padding: 10px
+			border-top: 1px solid $bc 	
+			.news__title	
+				margin: 0
+				a
+					font-size: 12px
+				span
+					font-size: 8px 
+		.news__list
+			float: none
+			width: auto
+			margin: 0 0 10px 0
 .news_no-border 	
 	border: none
 .news_all
@@ -32,6 +55,8 @@
 	.news__title
 		a
 			font-size: 22px
+			+rt(720)
+				font-size: 12px
 .news_bg
 	padding: 0
 	border: none
@@ -41,6 +66,12 @@
 		background: #f5f5f5 
 		&:first-child
 			padding: 20px
+		+rt(720)
+			padding: 10px
+			margin-bottom: 15px
+			&:first-child
+				margin-bottom: 15px
+				padding: 10px
 .news_sm
 	padding: 0
 	border: none
@@ -57,6 +88,8 @@
 			font-size: 13px
 	.news__more
 		text-align: center
+	+rt(720)
+		margin-bottom: 10px
 .news__item
 	padding-top: 20px
 	margin-top: 20px
@@ -72,21 +105,35 @@
 				color: $blue 
 		.read
 			display: block
+			+rt(720)
+				display: none
+	+rt(720)
+		padding: 10px 10px 0 10px
+		margin-top: 10px
+		border-top: 1px solid $bc 
+		&:first-child
+			padding: 0 10px
 .news__more
 	padding-top: 20px
 	.btn
 		min-width: 90px
+	+rt(720)
+		display: none
 .news__pic
 	position: relative
 	float: left
 	margin-right: 15px 
 	img
 		display: block
+		width: 100%
 	.read
 		display: none
 		position: absolute
 		right: 5px
 		bottom: 5px
+	+rt(720)
+		margin-right: 10px
+		width: 90px 
 .read
 	position: relative
 	button
@@ -98,6 +145,9 @@
 		i
 			display: inline-block
 			+s(read)
+		+rt(720)
+			width: 20px
+			height: 20px
 	&:hover
 		button
 			background: $red 
@@ -119,6 +169,7 @@
 	margin-left: -100px
 	text-align: center
 	font-size: 0
+	z-index: 1100 
 	span
 		position: relative
 		display: inline-block
@@ -143,12 +194,12 @@
 	display: table
 .news__title
 	margin-bottom: 5px
+	line-height: 1.2
 	a
 		+f
 		font-weight: bold
 		font-size: 26px
-		color: #252525 
-		line-height: 1.2
+		color: #252525 		
 		&:hover
 			text-decoration: underline
 	span
@@ -158,9 +209,15 @@
 		font-size: 13px
 		font-weight: 600 
 		color: #898989 
+		+rt(720)
+			font-size: 8px
 	.news__status
 		font-size: 13px
 		color: #3cb878 
+	+rt(720)
+		margin: 0
+		a
+			font-size: 12px
 .news__text	
 	margin-bottom: 15px
 	font-size: 14px
@@ -168,6 +225,8 @@
 		margin-top: 15px
 		&:first-child
 			margin: 0
+	+rt(720)
+		display: none
 .news__list
 	float: right
 	width: 325px
@@ -186,18 +245,37 @@
 			font-weight: 600 
 		span
 			font-size: 11px
+	+rt(720)
+		.news__item
+			&:first-child
+				padding: 0 10px
+		.news__title
+			a			
+				+f
+				font-size: 12px
+				font-weight: bold
+			span
+				font-size: 8px 
 .news__btn-load
 	width: 100%
 	height: 70px
 	margin-top: 35px
 	background: #f5f5f5 
 	color: $blue 
+	+rt(720)
+		margin-top: 10px
+		height: 35px
+		color: #7da7d9 
 //fresh-news
 .latest
 	position: fixed
 	bottom: 70px
 	right: 10px
 	width: 360px 
+	+rt(720)
+		right: 0
+		left: 0
+		bottom: 0
 .latest__item	
 	padding: 15px
 	margin-top: 10px
@@ -232,6 +310,7 @@
 //weather
 .weather
 	margin-bottom: 25px
+	overflow: hidden
 //text
 .text
 	padding: 20px
@@ -241,6 +320,14 @@
 		margin-top: 20px
 		&:first-child
 			margin: 0 
+	+rt(720)
+		padding: 10px
+		margin-bottom: 10px
+		p
+			margin-top: 10px
+			font-size: 9px 
+			&:first-child
+				margin: 0
 //select
 .select-btn
 	color: $blue
@@ -263,14 +350,21 @@
 		position: relative
 		display: block
 		padding: 0 10px 16px
+	+rt(720)
+		display: none
 //user
 .user
 	padding-top: 25px
+	+rt(720)
+		padding: 10px
 .user__head
 	padding-bottom: 25px
 	margin-bottom: 20px
 	border-bottom: 1px solid $bc
 	+clr
+	+rt(720)
+		margin-bottom: 10px
+		padding-bottom: 10px
 .user__pic
 	float: left
 	position: relative
@@ -290,12 +384,22 @@
 		color: #fff 
 .user__detail
 	float: left
+	+rt(720)
+		float: none
+		margin-bottom: 5px
+		padding-bottom: 5px 
+		border-bottom: 1px dashed $bc 
+		overflow: hidden
 .user__name
 	font-size: 21px
 	font-weight: 600 
+	+rt(720)
+		font-size: 14px
 .user__mail
 	font-style: italic
 	color: #898989 
+	+rt(720)
+		font-size: 12px 
 .user__out
 	float: right
 	padding: 20px 30px
@@ -303,25 +407,47 @@
 	font-size: 0
 	button
 		+s(user-out)
+	+rt(720)
+		display: none
 .user__subscribe
 	float: right
 	height: 100px
 	padding: 0 30px 
 	border-left: 1px dashed $bc
+	+rt(720)
+		float: left
+		height: auto
+		padding: 0
+		border: none
 .mailing__title
 	font-size: 15px
+	+rt(720)
+		font-size: 12px
 .mailing__status
 	margin-bottom: 20px
 	font-style: italic
 	color: #39b54a  
+	+rt(720)
+		margin: 0
+.mailing__links
+	+rt(720)
+		+clr
+		li
+			float: left
+			margin-right: 10px
+			font-size: 10px 
 //tabs
+.tabs__content
+	+rt(720)
+		.title
+			display: none
 .tabs__nav
-	margin-bottom: 30px
+	margin-bottom: 10px
 	font-size: 0
 	button
-		height: 50px
+		height: 30px
 		padding: 0 20px
-		margin-right: 20px 
+		margin-right: 10px 
 		background: #f5f5f5  
 		color: $blue
 		font-size: 18px
@@ -340,6 +466,10 @@
 				border-style: solid
 				border-width: 8px 8px 0 8px
 				border-color: $red transparent transparent transparent 
+		+rt(720)
+			font-size: 11px
+	+rt(720)
+		margin-bottom: 15px
 //switch
 .switch
 	display: block
@@ -378,18 +508,32 @@
 			height: 18px
 			background: #acacac
 			+trans(all .1s linear)
+	+rt(720)
+		margin-bottom: 3px
+		padding: 3px 0 3px 50px 
+		font-size: 10px
 //setting
 .setting
 	padding-bottom: 10px
 	margin-bottom: 25px
 	border-bottom: 1px solid #ccc 
 	+clr
+	+rt(720)
+		padding-bottom: 0
+		margin-bottom: 10px 
+		border: none
+.setting_main-page, .setting_lang
+	+rt(720)
+		display: none
 .setting__column
 	float: left
 	width: 240px
 	margin-right: 20px
 	.radio
 		margin-bottom: 12px
+	+rt(720)
+		float: none
+		margin: 0 0 15px
 .setting__mail
 	span
 		margin-right: 5px
@@ -406,6 +550,11 @@
 		text-align: center
 		a
 			font-size: 12px
+	+rt(720)
+		margin-bottom: 10px
+.setting__social-text
+	+rt(720)
+		font-size: 9px
 .setting__social-item
 	width: 108px
 	height: 78px
@@ -415,20 +564,41 @@
 	background: #f5f5f5
 	span
 		display: block
-		color: #898989 
+		color: #898989
+	+rt(720)
+		width: 78px
+		height: 68px
+		padding-top: 10px
+		span
+			font-size: 9px
 //keywords
 .keywords
 	margin-bottom: 50px
+	.title
+		+rt(720)
+			display: block
+			padding-bottom: 10px
+			font-size: 12px
+			color: #363636 
+			text-transform: none
+			font-weight: 600 
+	+rt(720)
+		margin-bottom: 10px
 .keywords_mod
 	margin: 0
 	.field
 		margin-bottom: 30px 
+		+rt(720)
+			margin-bottom: 10px
 .keywords__text
 	margin-bottom: 20px
 	a
 		display: inline-block
 		border-bottom: 1px dashed 
 		line-height: 1
+	+rt(720)
+		margin-bottom: 10px
+		font-size: 9px
 .keywords__list
 	margin-bottom: 20px 
 	+clr
@@ -439,20 +609,28 @@
 			display: block
 			border-bottom: 1px dashed 
 			line-height: 1
+			+rt(720)
+				font-size: 11px
+	+rt(720)
+		margin-bottom: 10px
 //change-pass
 .change-pass
 	.field
 		margin-bottom: 10px
 	.btn-wrap
 		margin-top: 20px
-//hide-archive
-.hide-archive
+		+rt(720)
+			margin-top: 0
+//archive-link
+.archive-link
 	float: right
 	height: 30px
 	padding: 0 10px 0 20px
 	margin: -6px 0 0 20px
 	border-left: 1px solid $bc 
-	line-height: 30px 
+	line-height: 30px
+	+rt(720)
+		display: none
 //sort-date
 .sort-date
 	margin: -20px 0 30px 0
@@ -462,6 +640,8 @@
 	.select
 		float: right
 		margin-left: 10px
+	+rt(720)
+		display: none
 //detail
 .detail
 	padding-bottom: 10px
@@ -471,34 +651,58 @@
 	.title
 		float: left
 		padding: 0
+		+rt(720)
+			font-size: 10px
 	.read
 		float: right
 		margin-top: -4px
+		+rt(720)
+			margin: -3px 0
+	+rt(720)
+		background: #f5f5f5 
+		padding: 10px
+		margin: 0
+		border: none
+		font-size: 10px
 .detail__item
 	float: left
 	padding-left: 15px
 	margin: 1px 0 0 15px
 	border-left: 1px dashed $bc 
 	font-weight: 600 
+	+rt(720)
+		margin: 0 0 0 15px
 .detail__item_mod
 	float: right
 	padding-right: 10px
 	color: #252525 
 	span
 		color: #898989 
+	+rt(720)
+		display: none
 //article
 .article
 	padding-bottom: 10px
-	border-bottom: 1px solid $bc
-	margin-bottom: 17px 
 	+clr	
 	& > img
 		float: right
 		margin: 0 0 20px 20px
+		+rt(720)
+			float: none
+			width: 100%
+			margin: -10px -10px 10px
 	p
 		margin-bottom: 20px
+		+rt(720)
+			margin-bottom: 10px
+	+rt(720)
+		padding: 10px
+		margin-bottom: 10px
+		font-size: 11px
 .article__video
 	margin-bottom: 20px
+	img
+		width: 100%
 .article__detail
 	margin-bottom: 20px
 	+clr
@@ -513,6 +717,11 @@
 //gallery
 .gallery
 	margin-bottom: 30px
+	+rt(720)
+		margin-bottom: 10px
+.gallery__big
+	img
+		width: 100%
 .gallery__small
 	position: relative
 	padding: 0 42px
@@ -557,6 +766,8 @@
 .gallery__detail
 	padding: 5px 0 20px	
 	+clr
+	+rt(720)
+		padding: 5px 0
 .gallery__detail-in
 	display: table
 	font-size: 14px
@@ -569,19 +780,29 @@
 		i
 			margin: 0 5px
 			font-style: italic
+	+rt(720)
+		font-size: 9px
 .gallery__source
 	float: right
 	margin-top: 2px
 	font-size: 12px
 	color: #898989 
+	+rt(720)
+		font-size: 9px
 //panel
 .panel
-	padding-bottom: 17px
+	padding: 17px 0
 	margin-bottom: 25px
-	border-bottom: 1px solid $bc  
+	border: 1px solid $bc  
+	border-width: 1px 0
 	.share
 		float: right
 		margin-top: 8px
+		+rt(720)
+			display: none
+	+rt(720)
+		padding: 10px 20px
+		margin: 0 -10px 10px 
 //l
 .l
 	+clr
@@ -589,11 +810,27 @@
 	float: left
 	width: 570px
 	margin-right: 30px
+	+rt(720)
+		float: none
+		width: auto
+		margin: 0
 .l__col-2 
 	overflow: hidden
+.l_comm
+	.l__col-1
+		display: none
+	&.is-show
+		.l__col-1
+			display: block
+		+rt(1200)
+			.l__col-2
+				display: none
 //comm
 .comm
 	margin-bottom: 30px
+	+rt(720)
+		margin-bottom: 10px
+		padding: 0 10px
 .comm__info
 	margin-bottom: 20px
 	padding: 10px
@@ -832,3 +1069,10 @@
 			margin-bottom: 20px
 		.field__input_mod
 			width: 140px 
+//my-page
+.my-page
+	+rt(720)
+		padding: 0 10px
+		.title_dark
+			padding-bottom: 10px
+			font-size: 10px

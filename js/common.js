@@ -58,7 +58,7 @@ function comm() {
 	var el = $('.js-comm');
 	var btn = $('.js-show-comm');
 	btn.click(function() {
-		el.toggle();
+		el.toggleClass('is-show');
 		$(this).toggleClass('is-active');
 	});
 };
@@ -83,5 +83,14 @@ function sidebar() {
 	});
 };
 sidebar();
+
+//region mobolie
+function region_mob() {
+	var el = $('.js-region-mob');
+	el.bind('click', function() {
+		el.toggleClass('is-open');
+	});
+};
+region_mob();
 
 });

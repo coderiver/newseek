@@ -19,44 +19,63 @@
 	<div class="wrap__in">
 		<!-- BEGIN .sidebar -->
 		<div class="sidebar">
-			<a class="logo" href="#">
-				<strong>Newseek</strong>
-				<span>Украина</span>
-			</a>
-			<div class="my-newseek">
-				<a href="#">Мой Newseek</a>
+			<div class="sidebar__in">
+				<button class="sidebar__btn-menu js-sidebar-menu"><i></i></button>
+				<button class="sidebar__btn-settings js-sidebar-settings"><i></i></button>
+				<a class="logo" href="#">
+					<strong>Newseek</strong>
+					<span>Украина</span>
+				</a>
+				<div class="sidebar__menu">
+					<div class="sidebar__user">
+						<button class="btn btn_blue"><i></i><span>Войти</span></button>
+					</div>
+					<div class="sidebar__user">
+						<a href="#"><img src="http://placehold.it/31x31" alt=""/>Ваш профайл</a>			
+					</div>
+					<!-- BEGIN .search -->
+					<div class="search search_sidebar">
+						<button class="search__btn"><i></i></button>
+						<input class="search__field" type="text">
+					</div>
+					<!-- END .search -->
+					<div class="my-newseek">
+						<a href="#">Мой Newseek</a>
+					</div>
+					<nav class="nav">
+						<ul>
+							<li class="is-active"><a href="#">Главные новости</a></li>
+							<li><a href="#">Все новости</a></li>
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">Обсуждаемое</a></li>
+							<li><a href="#">Читать позже</a></li>
+							<li><a href="#">Радио</a></li>
+						</ul>
+					</nav>
+					<nav class="nav nav_mod">
+						<ul>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Геополитика</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Наука и технологии</a></li>
+							<li><a href="#">Экономика и бизнес</a></li>
+							<li><a href="#">Шоу-биз и культура</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Здоровье</a></li>
+							<li><a href="#">Спорт</a></li>
+							<li><a href="#">Авто</a></li>
+							<li><a href="#">Блоги</a></li>
+						</ul>
+					</nav>
+					<div class="subscribe">
+						<a href="#">Подпишись на новости</a>
+					</div>
+					<div class="login">
+						<a href="#">Войти</a>
+					</div>
+				</div>				
 			</div>
-			<nav class="nav">
-				<ul>
-					<li class="is-active"><a href="#">Главные новости</a></li>
-					<li><a href="#">Все новости</a></li>
-					<li><a href="#">Популярное</a></li>
-					<li><a href="#">Обсуждаемое</a></li>
-					<li><a href="#">Читать позже</a></li>
-					<li><a href="#">Радио</a></li>
-				</ul>
-			</nav>
-			<nav class="nav nav_mod">
-				<ul>
-					<li><a href="#">Политика</a></li>
-					<li><a href="#">Геополитика</a></li>
-					<li><a href="#">Происшествия</a></li>
-					<li><a href="#">Наука и технологии</a></li>
-					<li><a href="#">Экономика и бизнес</a></li>
-					<li><a href="#">Шоу-биз и культура</a></li>
-					<li><a href="#">Общество</a></li>
-					<li><a href="#">Здоровье</a></li>
-					<li><a href="#">Спорт</a></li>
-					<li><a href="#">Авто</a></li>
-					<li><a href="#">Блоги</a></li>
-				</ul>
-			</nav>
-			<div class="subscribe">
-				<a href="#">Подпишись на новости</a>
-			</div>
-			<div class="login">
-				<a href="#">Войти</a>
-			</div>			
+			<button class="sidebar__btn js-sidebar-btn"><i></i></button>
 		</div>
 		<!-- END .sidebar -->
 		<!-- BEGIN .container -->
@@ -197,11 +216,11 @@
 			</div>
 			<!-- END .panel -->
 			<!-- BEGIN .l -->
-			<div class="l">
-				<div class="l__col-1 js-comm" style="display: none">
-					<div class="title title_sm">Ваш комментарий</div>
+			<div class="l l_comm js-comm">
+				<div class="l__col-1">			
 					<!-- BEGIN .comm -->
 					<div class="comm">
+						<div class="title title_sm">Ваш комментарий</div>
 						<div class="comm__info">Чтобы писать комментарии от индивидуального имени и получать уведомления об ответах на ваши комментарии, необходимо <a href="#">авторизироваться в системе</a></div>
 						<div class="comm__list">
 							<div class="comm__form">
@@ -317,7 +336,7 @@
 					<!-- END .comm -->
 				</div>
 				<div class="l__col-2">
-					<div class="title title_sm">ДАЛЕЕ ПО РУБРИКЕ</div>
+					<div class="title title_sm title_mob">ДАЛЕЕ ПО РУБРИКЕ</div>
 					<!-- BEGIN .news -->
 					<div class="news news_sm">
 						<div class="news__item">
@@ -326,7 +345,7 @@
 							</div>
 							<div class="news__in">
 								<div class="news__title">
-									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 								</div>								
 							</div>
 						</div>
@@ -336,7 +355,7 @@
 							</div>
 							<div class="news__in">
 								<div class="news__title">
-									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 								</div>								
 							</div>
 						</div>
@@ -346,7 +365,7 @@
 							</div>
 							<div class="news__in">
 								<div class="news__title">
-									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 								</div>								
 							</div>
 						</div>
@@ -356,7 +375,7 @@
 							</div>
 							<div class="news__in">
 								<div class="news__title">
-									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span>12:34</span></a>
+									<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
 								</div>								
 							</div>
 						</div>
@@ -365,17 +384,17 @@
 						</div>
 					</div>
 					<!-- END .news -->
-					<div class="title title_sm title_border">АКТУАЛЬНЫЕ НОВОСТИ</div>
+					<div class="title title_sm title_mob title_border">АКТУАЛЬНЫЕ НОВОСТИ</div>
 					<!-- BEGIN .news -->
 					<div class="news news_sm">
 						<div class="news__item">
 							<div class="news__title">
-								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span class="news__status">Сейчас читают 234</span></a>					
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span class="news__status">Сейчас читают 234</span>					
 							</div>
 						</div>
 						<div class="news__item">
 							<div class="news__title">
-								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ<span class="news__status">Дискуссия!</span></a>					
+								<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span class="news__status">Дискуссия!</span>					
 							</div>
 						</div>
 						<div class="news__item">
@@ -410,6 +429,31 @@
 			<!-- END .l -->
 		</div>
 		<!-- END .container -->
+		<!-- BEGIN .tuning -->
+		<div class="tuning">
+			<div class="tuning__title">Язык интерфейса</div>
+			<div class="tuning__lang">
+				<a class="is-active" href="#"><i class="tuning__lang-ru"></i></a>
+				<a href="#"><i class="tuning__lang-ua"></i></a>
+				<a href="#"><i class="tuning__lang-eu"></i></a>
+			</div>
+			<div class="tuning__title">Язык статей</div>
+				<div class="tuning__lang">
+					<label class="switch"><input type="checkbox" checked=""><i></i>Русские</label>
+					<label class="switch"><input type="checkbox"><i></i>Українські</label>
+				</div>
+			<div class="tuning__title">Личные настройки</div>
+			<div class="tuning__personal">
+				<div class="tuning__personal-item">
+					<label class="switch"><input type="checkbox" checked=""><i></i>Не показывать прочитанные статьи</label>
+				</div>
+				<div class="tuning__personal-item">
+					<label class="switch"><input type="checkbox"><i></i>Сделать страницу «Мой Newseek» Главной</label>
+					<div class="tuning__personal-info">При входе на сайт будет открыватся «Мой Newseek»</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .tuning -->
 	</div>
 	<div class="push"></div>
 </section>
