@@ -84,7 +84,7 @@ function sidebar() {
 };
 sidebar();
 
-//region mobolie
+//region mobile
 function region_mob() {
 	var el = $('.js-region-mob');
 	el.bind('click', function() {
@@ -92,5 +92,14 @@ function region_mob() {
 	});
 };
 region_mob();
+
+//region mobile
+function settings_mob() {
+	var el = $('.js-settings-mob');
+	el.bind('click', function() {
+		el.toggleClass('is-open');
+	});
+};
+settings_mob();
 
 });

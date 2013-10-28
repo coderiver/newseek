@@ -96,21 +96,21 @@ table
 			overflow: hidden
 			line-height: 30px
 			font-size: 10px
-.region-mob
+.region-mob, .page-setting
 	display: none
 	float: right
 	margin-right: -10px
 	&.is-open
-		.region-mob__down
+		.region-mob__down, .page-setting__down
 			display: block
-		.region-mod__head 
+		.region-mod__head, .page-setting__head 
 			background: #FFF 
 			.arr
 				border-width: 0 4px 4px 4px
 				border-color: transparent transparent #7da7d9 transparent
 	+rt(720)
 		display: block
-.region-mod__head 	
+.region-mod__head, .page-setting__head 	
 	position: relative
 	height: 30px
 	padding: 0 10px 0 15px
@@ -122,7 +122,7 @@ table
 	.arr
 		margin: 0 0 2px 5px 
 		border-color: #7da7d9 transparent transparent transparent
-.region-mob__down 
+.region-mob__down, .page-setting__down 
 	display: none	
 	position: absolute
 	top: 100%
@@ -161,6 +161,19 @@ table
 	& > li
 		li
 			margin-bottom: 5px
+.page-setting__down 
+	padding: 20px	
+	.my__stats-on, .my__stats-off
+		.my__setting
+			padding: 5px 5px 5px 15px
+		.my__drag
+			width: 8px
+			height: 24px
+		.switch
+			padding: 3px 40px 3px 0
+			font-size: 10px
+	.my__stats-on
+		margin-bottom: 10px
 .title__all
 	display: none
 	float: right
@@ -214,6 +227,9 @@ table
 	font-weight: bold
 	line-height: 1.2
 	color: #252525 
+	+rt(720)
+		margin-bottom: 10px
+		font-size: 14px
 //
 .sidebar
 	position: fixed
