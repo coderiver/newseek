@@ -41,13 +41,21 @@
 			.news__title	
 				margin: 0
 				a
-					font-size: 12px
+					font-size: 14px
 				span
 					font-size: 8px 
+		.news__pic
+			width: 90px
 		.news__list
 			float: none
 			width: auto
 			margin: 0 0 10px 0
+			.news__title	
+				margin: 0
+				a
+					font-size: 14px
+				span
+					font-size: 8px 
 .news_no-border 	
 	border: none
 .news_all
@@ -56,7 +64,10 @@
 		a
 			font-size: 22px
 			+rt(720)
-				font-size: 12px
+				font-size: 14px
+	+rt(720)
+		.news__pic
+			width: 90px
 .news_bg
 	padding: 0
 	border: none
@@ -72,6 +83,9 @@
 			&:first-child
 				margin-bottom: 15px
 				padding: 10px
+	.news__pic
+		+rt(720)
+			width: 90px
 .news_sm
 	padding: 0
 	border: none
@@ -133,7 +147,7 @@
 		bottom: 5px
 	+rt(720)
 		margin-right: 10px
-		width: 90px 
+		width: 115px 
 .read
 	position: relative
 	button
@@ -202,6 +216,8 @@
 		color: #252525 		
 		&:hover
 			text-decoration: underline
+		+rt(720)
+			font-size: 14px
 	span
 		margin-left: 5px
 		text-decoration: none
@@ -215,9 +231,7 @@
 		font-size: 13px
 		color: #3cb878 
 	+rt(720)
-		margin: 0
-		a
-			font-size: 12px
+		margin: 0		
 .news__text	
 	margin-bottom: 15px
 	font-size: 14px
@@ -266,6 +280,7 @@
 		margin-top: 10px
 		height: 35px
 		color: #7da7d9 
+		font-size: 11px
 //fresh-news
 .latest
 	position: fixed
@@ -335,6 +350,8 @@
 	+no-sel
 	.arr
 		margin-left: 4px
+		+rt(720)
+			margin-bottom: 3px
 //sort
 .sort
 	float: right
@@ -429,6 +446,7 @@
 	color: #39b54a  
 	+rt(720)
 		margin: 0
+		font-size: 11px
 .mailing__links
 	+rt(720)
 		+clr
@@ -442,10 +460,10 @@
 		.title
 			display: none
 .tabs__nav
-	margin-bottom: 10px
+	margin-bottom: 30px
 	font-size: 0
 	button
-		height: 30px
+		height: 50px
 		padding: 0 20px
 		margin-right: 10px 
 		background: #f5f5f5  
@@ -467,6 +485,7 @@
 				border-width: 8px 8px 0 8px
 				border-color: $red transparent transparent transparent 
 		+rt(720)
+			height: 30px
 			font-size: 11px
 	+rt(720)
 		margin-bottom: 15px
@@ -511,7 +530,7 @@
 	+rt(720)
 		margin-bottom: 3px
 		padding: 3px 0 3px 50px 
-		font-size: 10px
+		font-size: 12px
 //setting
 .setting
 	padding-bottom: 10px
@@ -855,6 +874,9 @@
 	margin-bottom: 15px
 	border-bottom: 1px dashed $bc 
 	+clr
+	+rt(720)
+		padding-bottom: 10px
+		margin-bottom: 10px
 .comm__pic
 	float: left
 	margin-right: 10px 

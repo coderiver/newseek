@@ -64,6 +64,7 @@ table
 	margin: 0 auto -60px
 	+rt(720)
 		background: #fff 
+		margin: 0 auto -36px
 		overflow: hidden
 .wrap__in, .footer__in
 	position: relative
@@ -74,6 +75,8 @@ table
 .push
 	height: 60px
 	clear: both
+	+rt(720)
+		height: 36px
 .title-wrap
 	position: relative
 	margin-bottom: 30px
@@ -96,21 +99,21 @@ table
 			overflow: hidden
 			line-height: 30px
 			font-size: 10px
-.region-mob, .page-setting
+.dropdown
 	display: none
 	float: right
 	margin-right: -10px
 	&.is-open
-		.region-mob__down, .page-setting__down
+		.dropdown__down
 			display: block
-		.region-mod__head, .page-setting__head 
+		.dropdown__head
 			background: #FFF 
 			.arr
 				border-width: 0 4px 4px 4px
 				border-color: transparent transparent #7da7d9 transparent
 	+rt(720)
 		display: block
-.region-mod__head, .page-setting__head 	
+.dropdown__head
 	position: relative
 	height: 30px
 	padding: 0 10px 0 15px
@@ -122,7 +125,7 @@ table
 	.arr
 		margin: 0 0 2px 5px 
 		border-color: #7da7d9 transparent transparent transparent
-.region-mob__down, .page-setting__down 
+.dropdown__down
 	display: none	
 	position: absolute
 	top: 100%
@@ -145,24 +148,25 @@ table
 				margin: 0
 	li
 		&.is-active
-			a
+			label
 				background: $red
-				color: #FFF  
-	a
+				color: #FFF 
+	label
+		display: block
+		+no-sel 
+		cursor: pointer
+	span
 		display: block
 		padding: 4px 7px
 		background: #f5f5f5
 		color: #7da7d9 
-.region-mob__list-main
-	padding: 10px
-	background: #FFF 
-.region-mob__list-sub
-	padding: 10px 10px 5px	 
-	& > li
-		li
-			margin-bottom: 5px
-.page-setting__down 
-	padding: 20px	
+	input
+		display: none
+		&:checked + span			
+			background: $red 
+			color: #FFF 
+	.my
+		padding: 10px
 	.my__stats-on, .my__stats-off
 		.my__setting
 			padding: 5px 5px 5px 15px
@@ -174,6 +178,14 @@ table
 			font-size: 10px
 	.my__stats-on
 		margin-bottom: 10px
+.dropdown__list-main
+	padding: 10px
+	background: #FFF 
+.dropdown__list-sub
+	padding: 10px 10px 5px	 
+	& > li
+		li
+			margin-bottom: 5px
 .title__all
 	display: none
 	float: right
@@ -775,10 +787,10 @@ table
 	position: relative
 	background: #ebebeb 
 	z-index: 200 
-	+rt(720)
-		padding: 0 10px
 .footer__in
 	height: 60px
+	+rt(720)
+		height: 36px
 .copyright
 	float: left
 	width: 222px 
@@ -786,6 +798,9 @@ table
 	color: #898989 
 	+rt(720)
 		width: auto
+		padding-left: 10px
+		line-height: 36px
+		font-size: 9px
 .mail
 	float: left
 	line-height: 60px
@@ -810,18 +825,34 @@ table
 		i
 			display: inline-block
 			vertical-align: middle
+		+rt(720)
+			margin-left: 3px
+			a
+				width: 28px
+				height: 30px
+				line-height: 30px
+	+rt(720)
+		margin: 3px
 .social__vk
 	i
 		+s(vk)
+		+rt(720)
+			+s(vk-mob)
 .social__gp
 	i
 		+s(gp)
+		+rt(720)
+			+s(gp-mob)
 .social__fb
 	i
 		+s(fb) 
+		+rt(720)
+			+s(fb-mob)
 .social__tw
 	i
 		+s(tw)
+		+rt(720)
+			+s(tw-mob)
 //form
 .checkbox, .radio
 	display: block

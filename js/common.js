@@ -85,21 +85,13 @@ function sidebar() {
 sidebar();
 
 //region mobile
-function region_mob() {
-	var el = $('.js-region-mob');
+function dropdown() {
+	var el = $('.js-dropdown');
 	el.bind('click', function() {
-		el.toggleClass('is-open');
+		el.parent().toggleClass('is-open');
 	});
 };
-region_mob();
+dropdown();
 
-//region mobile
-function settings_mob() {
-	var el = $('.js-settings-mob');
-	el.bind('click', function() {
-		el.toggleClass('is-open');
-	});
-};
-settings_mob();
 
 });
