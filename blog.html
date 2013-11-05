@@ -1,0 +1,294 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<div class="wrap__in">
+		<!-- BEGIN .sidebar -->
+		<div class="sidebar">
+			<div class="sidebar__in">
+				<button class="sidebar__btn-menu js-sidebar-menu"><i></i></button>
+				<button class="sidebar__btn-settings js-sidebar-settings"><i></i></button>
+				<a class="logo" href="#">
+					<strong>Newseek</strong>
+					<span>Украина</span>
+				</a>
+				<div class="sidebar__menu">
+					<div class="sidebar__user">
+						<button class="btn btn_blue"><i></i><span>Войти</span></button>
+					</div>
+					<div class="sidebar__user">
+						<a href="#"><img src="http://placehold.it/31x31" alt=""/>Ваш профайл</a>			
+					</div>
+					<!-- BEGIN .search -->
+					<div class="search search_sidebar">
+						<button class="search__btn"><i></i></button>
+						<input class="search__field" type="text">
+					</div>
+					<!-- END .search -->
+					<div class="my-newseek">
+						<a href="#">Мой Newseek</a>
+					</div>
+					<nav class="nav">
+						<ul>
+							<li class="is-active"><a href="#">Главные новости</a></li>
+							<li><a href="#">Все новости</a></li>
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">Обсуждаемое</a></li>
+							<li><a href="#">Читать позже</a></li>
+							<li><a href="#">Радио</a></li>
+						</ul>
+					</nav>
+					<nav class="nav nav_mod">
+						<ul>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Геополитика</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Наука и технологии</a></li>
+							<li><a href="#">Экономика и бизнес</a></li>
+							<li><a href="#">Шоу-биз и культура</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Здоровье</a></li>
+							<li><a href="#">Спорт</a></li>
+							<li><a href="#">Авто</a></li>
+							<li><a href="#">Блоги</a></li>
+						</ul>
+					</nav>
+					<div class="subscribe">
+						<a href="#">Подпишись на новости</a>
+					</div>
+					<div class="login">
+						<a href="#">Войти</a>
+					</div>
+				</div>				
+			</div>
+			<button class="sidebar__btn js-sidebar-btn"><i></i></button>
+		</div>
+		<!-- END .sidebar -->
+		<!-- BEGIN .container -->
+		<div class="container">
+			<!-- BEGIN .top -->
+			<div class="top">
+				<div class="region">
+					<div class="region__title">Регион новостей:</div>
+					<ul class="region__list">
+						<li><a href="#">Мир</a></li>
+						<li class="is-active"><a href="#">Украина</a></li>
+						<li class="is-drop">
+							<a href="#"><span>Киев</span><i class="arr"></i></a>
+							<div class="region__drop">
+								<ul>
+									<li><a href="#">Винница</a></li>
+									<li><a href="#">Днепропетровск</a></li>
+									<li><a href="#">Донецк</a></li>
+									<li><a href="#">Житомир</a></li>
+								</ul>
+								<ul>
+									<li class="is-active"><a href="#">Киев</a></li>
+									<li><a href="#">Крым</a></li>
+									<li><a href="#">Луганск</a></li>
+									<li><a href="#">Луцк</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Львов</a></li>
+									<li><a href="#">Николаев</a></li>
+									<li><a href="#">Одесса</a></li>
+									<li><a href="#">Полтава</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Тернополь</a></li>
+									<li><a href="#">Харьков</a></li>
+									<li><a href="#">Херсон</a></li>
+									<li><a href="#">Хмельницкий</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search">
+					<button class="search__btn"><i></i></button>
+					<input class="search__field" type="text">
+				</div>
+				<div class="lang">
+					<div class="lang__current">
+						<i class="lang__ru"></i>
+						<span>RU</span>
+						<i class="arr"></i>
+						<i class="border"></i>
+					</div>
+					<ul class="lang__drop">
+						<li class="is-active"><a href="#"><i class="lang__ru"></i><span>RU</span><strong>Русский</strong></a></li>
+						<li><a href="#"><i class="lang__ua"></i><span>UA</span><strong>Українська</strong></a></li>
+						<li><a href="#"><i class="lang__eu"></i><span>EU</span><strong>English</strong></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .top -->
+			<div class="title-wrap">
+				<label class="checkbox"><input type="checkbox" checked><i></i>Не показывать прочитаные</label>
+				<!-- BEGIN .dropdown -->
+				<div class="dropdown">
+					<div class="dropdown__head js-dropdown">В Украине<i class="arr"></i></div>
+					<div class="dropdown__down">
+						<ul class="dropdown__list-main">
+							<li><label><input type="checkbox"><span>Мир</span></label></li>
+							<li><label><input type="checkbox" checked><span>Украина</span></label></li>
+						</ul>
+						<ul class="dropdown__list-sub">
+							<li>
+								<ul>
+									<li><label><input type="checkbox"><span>Винница</span></label></li>
+									<li><label><input type="checkbox"><span>Днепропетровск</span></label></li>
+									<li><label><input type="checkbox"><span>Донецк</span></label></li>
+									<li><label><input type="checkbox"><span>Житомир</span></label></li>
+									<li><label><input type="checkbox"><span>Киев</span></label></li>
+									<li><label><input type="checkbox"><span>Крым</span></label></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><label><input type="checkbox"><span>Луганск</span></label></li>
+									<li><label><input type="checkbox"><span>Луцк</span></label></li>
+									<li><label><input type="checkbox"><span>Львов</span></label></li>
+									<li><label><input type="checkbox"><span>Николаев</span></label></li>
+									<li><label><input type="checkbox"><span>Одесса</span></label></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><label><input type="checkbox"><span>Тернополь</span></label></li>
+									<li><label><input type="checkbox"><span>Харьков</span></label></li>
+									<li><label><input type="checkbox"><span>Херсон</span></label></li>
+									<li><label><input type="checkbox"><span>Хмельницкий</span></label></li>
+									<li><label><input type="checkbox"><span>Полтава</span></label></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- END .dropdown -->
+				<div class="title">Блоги</div>
+			</div>		
+			<!-- BEGIN .news -->
+			<div class="news news_all">
+				<div class="news__item">
+
+					<div class="news__in">
+						<div class="news__title">
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
+						</div>
+					</div>
+				</div>
+				<div class="news__item">
+
+					<div class="news__in">
+						<div class="news__title">
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
+						</div>
+					</div>
+				</div>
+				<div class="news__item">
+
+					<div class="news__in">
+						<div class="news__title">
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
+						</div>
+
+					</div>
+				</div>
+				<div class="news__item">
+
+					<div class="news__in">
+						<div class="news__title">
+							<a href="#">Сноуден собирал секретные данные до работы с ЦРУ</a><span>12:34</span>
+						</div>
+
+					</div>
+				</div>
+				<button class="news__btn-load">Показать все новости</button>
+			</div>
+			<!-- END .news -->			
+		</div>
+		<!-- END .container -->
+		<!-- BEGIN .tuning -->
+		<div class="tuning">
+			<div class="tuning__title">Язык интерфейса</div>
+			<div class="tuning__lang">
+				<a class="is-active" href="#"><i class="tuning__lang-ru"></i></a>
+				<a href="#"><i class="tuning__lang-ua"></i></a>
+				<a href="#"><i class="tuning__lang-eu"></i></a>
+			</div>
+			<div class="tuning__title">Язык статей</div>
+				<div class="tuning__lang">
+					<label class="switch"><input type="checkbox" checked=""><i></i>Русские</label>
+					<label class="switch"><input type="checkbox"><i></i>Українські</label>
+				</div>
+			<div class="tuning__title">Личные настройки</div>
+			<div class="tuning__personal">
+				<div class="tuning__personal-item">
+					<label class="switch"><input type="checkbox" checked=""><i></i>Не показывать прочитанные статьи</label>
+				</div>
+				<div class="tuning__personal-item">
+					<label class="switch"><input type="checkbox"><i></i>Сделать страницу «Мой Newseek» Главной</label>
+					<div class="tuning__personal-info">При входе на сайт будет открыватся «Мой Newseek»</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .tuning -->
+	</div>	
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="copyright">© Newseek 2013</div>
+		<div class="mail">Связатся с нами: <a href="mailto:info@newseek.org">info@newseek.org</a></div>
+		<ul class="social">
+			<li><a class="social__vk" href="#"><i></i></a></li>
+			<li><a class="social__gp" href="#"><i></i></a></li>
+			<li><a class="social__fb" href="#"><i></i></a></li>
+			<li><a class="social__tw" href="#"><i></i></a></li>
+		</ul>
+	</div>
+</footer>
+<!-- END .footer -->
+<!-- BEGIN .latest -->
+<div class="latest">
+	<div class="latest__item">
+		<div class="latest__head">Свежая новость <a href="#">по запросу</a>: <span>«Азаров»</span><button class="latest__close"></button></div>
+		<div class="latest__in">
+			<div class="latest__pic">
+				<a href="#"><img src="http://placehold.it/90x60"></a>
+			</div>
+			<div class="latest__title">
+				<a href="#">Азаров об ассоциации с ЕС: Мы не можем допустить ослабления евразийского вектора</a><span>12:34</span>
+			</div>
+		</div>
+	</div>
+	<div class="latest__item">
+		<div class="latest__head">Новая новость <a href="#">по запросу</a>: <span>«Промышленная катастрофа»</span><button class="latest__close"></button></div>
+		<div class="latest__in">
+			<div class="latest__pic">
+				<a href="#"><img src="http://placehold.it/90x60"></a>
+			</div>
+			<div class="latest__title">
+				<a href="#">Военно-промышленная катастрофа</a><span>12:34</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .latest -->
+</body>
+</html>
