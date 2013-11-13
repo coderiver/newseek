@@ -57,9 +57,18 @@ gallery();
 function comm() {
 	var el = $('.js-comm');
 	var btn = $('.js-show-comm');
+	var news = el.find('.news_comm');
 	btn.click(function() {
 		el.toggleClass('is-show');
 		$(this).toggleClass('is-active');
+		if (news.hasClass('news_sm-grid')) {
+			news.removeClass('news_sm-grid');
+			news.addClass('news_sm');
+		}
+		else {
+			news.addClass('news_sm-grid');
+			news.removeClass('news_sm');
+		}
 	});
 };
 comm();

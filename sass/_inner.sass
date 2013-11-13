@@ -104,6 +104,27 @@
 		text-align: center
 	+rt(720)
 		margin-bottom: 10px
+.news_sm-grid
+	font-size: 0
+	.news__pic
+		float: none
+		width: auto
+		margin: 0 0 5px
+	.news__item
+		display: inline-block
+		width: 206px
+		padding: 0
+		border: none
+		margin: 0 0 0 34px
+		vertical-align: top
+		&:first-child
+			margin: 0
+		a
+			font-family: 'Open Sans', Arial, Tahoma, sans-serif
+			font-size: 13px
+			font-weight: 600 
+		span
+			font-size: 11px
 .news__item
 	padding-top: 20px
 	margin-top: 20px
@@ -140,6 +161,7 @@
 	img
 		display: block
 		width: 100%
+		height: auto
 	.read
 		display: none
 		position: absolute
