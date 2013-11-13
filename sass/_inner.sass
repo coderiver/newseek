@@ -105,6 +105,8 @@
 	+rt(720)
 		margin-bottom: 10px
 .news_sm-grid
+	padding: 0
+	border: none
 	font-size: 0
 	.news__pic
 		float: none
@@ -125,6 +127,23 @@
 			font-weight: 600 
 		span
 			font-size: 11px
+	+rt(1200)
+		.news__item
+			display: block
+			width: auto
+			padding: 10px 0 0 0
+			margin: 10px 0 0 0
+			border-top: 1px dashed $bc 
+			a
+				font-family: 'Open Sans', Arial, Tahoma, sans-serif
+				font-size: 13px
+				font-weight: 600 
+			span
+				font-size: 11px
+		.news__pic
+			float: left
+			width: 90px
+			margin: 0 15px 0 0
 .news__item
 	padding-top: 20px
 	margin-top: 20px
